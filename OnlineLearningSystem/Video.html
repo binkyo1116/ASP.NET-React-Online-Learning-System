@@ -1,0 +1,213 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="/PageScripts/Global.js"></script>
+
+    <input type="text" id="txtScale" value="100" />%
+    <button style="width:50px; height:50px" onclick="play()">Start</button>
+    <button style="width:50px; height:50px" onclick="pause()">Pause</button>
+    </br>
+    <span id="timeText"></span>
+    </br>
+    <span id="coords"></span>
+    </br>
+
+
+    <div id="div1" style="left: 100px; top: 50px; height: 60px;
+                    width: 60px; border: 2px; border-style:solid; border-color:darkblue;
+                    position: absolute; z-index: 2; display: none"
+         onclick="play()" ondrop="drop(event)" ondragover="allowDrop(event)">
+    </div>
+
+    <div id="div2" style="left: 250px; top: 100px; height: 60px;
+                    width: 60px; border: 2px; border-style:solid; border-color:red;
+                    position: absolute; z-index: 2; display: none" onmousedown="snap()">
+        <img id="snapImage"
+             draggable="true" ondragstart="drag(event)" style="background-color:yellow" />
+    </div>
+
+    <div id="div3" style="font-family: Helvetica; font-size: 12px; 
+                            left: 100px; top: 50px; height: 60px; width: 60px; 
+                            border: 2px; border-style: solid; border-color: darkblue; 
+                            position: absolute; z-index: 2; display: none"
+         onkeyup="checkText()" contenteditable="true">
+    </div>
+
+    <video id="video" ontimeupdate="timeUpdate()"
+           style="z-index: 1; display: none" crossorigin="anonymous" controls>
+        <source type="video/mp4"
+                src="">
+    </video>
+
+    <canvas id="snapCanvas" style="display:none"></canvas>
+
+    <script language="javascript">
+
+        videoWeight = 1280;
+        videoHeight = 720;
+        scale = 1;
+
+        const data = {
+            VideoMaterialId: 1
+        };
+
+        myVideo = document.getElementById('video');
+        timeText = document.getElementById('timeText');
+        coords = document.getElementById('coords');
+        div1 = document.getElementById('div1');
+        canvas = document.getElementById('snapCanvas');
+        context = canvas.getContext('2d');
+        image = document.getElementById('snapImage');
+        actions = {};
+        expectedText = "";
+        lastStop = 0;
+
+        fetchFunction("VideoMaterial", data).then(d => {
+
+            myVideo.src = d.Url;
+
+            d.Steps.forEach(s => actions[s.TimeStamp] = s);
+
+        });
+
+        window.onmousemove = function showCoords(e) {
+            [x, y] = relative(e.pageX, e.pageY)
+            coords.textContent = x + ", " + y;
+        }
+
+        function allowDrop(event) {
+            event.preventDefault();
+        }
+
+        function drag(event) {
+            snap();
+            event.dataTransfer.setData("text", event.target.id);
+        }
+
+        function drop(event) {
+            event.preventDefault();
+            var data = event.dataTransfer.getData("text");
+            if (data == 'snapImage') {
+                event.target.appendChild(document.getElementById(data));
+                play();
+            }
+        }
+
+        function relative(x, y) {
+            videoRect = myVideo.getBoundingClientRect();
+            return [x / scale - videoRect.x, y / scale - videoRect.y];
+        }
+
+        function absolute(x, y) {
+            videoRect = myVideo.getBoundingClientRect();
+            return [x * scale + videoRect.x, y * scale + videoRect.y];
+        }
+
+        function play() {
+            scale = document.getElementById('txtScale').value / 100;
+            myVideo.style.display = '';
+            myVideo.height = videoHeight * scale;
+            myVideo.width = videoWeight * scale;
+            image.src = '';
+            div2.appendChild(image);
+            div1.style.display = 'none';
+            div2.style.display = 'none';
+            div3.style.display = 'none';
+            div3.textContent = '';
+            myVideo.play();
+        }
+
+        function pause() {
+            myVideo.pause();
+        }
+
+        function snap() {
+            [x, y] = relative(parseInt(div2.style.left), parseInt(div2.style.top));
+            w = parseInt(div2.style.width);
+            h = parseInt(div2.style.height);
+
+            canvas.width = w;
+            canvas.height = h;
+            context.fillRect(0, 0, w, h);
+            context.drawImage(myVideo, x, y, w, h, 0, 0, w, h);
+
+            dataURI = canvas.toDataURL('image/jpeg');
+            image.src = dataURI;
+
+        }
+
+        function checkText() {
+            if (div3.textContent == expectedText)
+                play();
+        }
+
+        function timeUpdate() {
+
+            timeText.textContent = myVideo.currentTime;
+
+            time = Math.floor(myVideo.currentTime);
+
+            if (time == lastStop) return;
+
+            lastStop = time;
+
+            action = actions[time];
+
+            if (action === undefined) return;
+
+            pause();
+
+            if (action.Action == 'click') {
+                [x1, y1] = absolute(action.Xs1, action.Ys1)
+                div1.style.left = x1 + 'px';
+                div1.style.top = y1 + 'px';
+
+                div1.style.width = (action.Xs2 - action.Xs1) * scale + 'px';
+                div1.style.height = (action.Ys2 - action.Ys1) * scale + 'px';
+
+                div1.style.display = '';
+            }
+            else if (action.Action == 'dd') {
+                [xs1, ys1] = absolute(action.Xs1, action.Ys1);
+                div2.style.left = xs1 + 'px';
+                div2.style.top = ys1 + 'px';
+
+                div2.style.width = (action.Xs2 - action.Xs1) * scale + 'px';
+                div2.style.height = (action.Ys2 - action.Ys1) * scale + 'px';
+
+                div2.style.display = '';
+
+                [xe1, ye1] = absolute(action.Xe1, action.Ye1);
+                div1.style.left = xe1 + 'px';
+                div1.style.top = ye1 + 'px';
+
+                div1.style.width = (action.Xs2 - action.Xs1) * scale + 'px';
+                div1.style.height = (action.Ys2 - action.Ys1) * scale + 'px';
+
+                div1.style.display = '';
+            }
+            else if (action.Action == "text") {
+                [x1, y1] = absolute(action.Xs1, action.Ys1)
+
+                //div3.style = action.Style;
+
+                div3.style.left = x1 + 'px';
+                div3.style.top = y1 + 'px';
+
+                div3.style.width = (action.Xs2 - action.Xs1) * scale + 'px';
+                div3.style.height = (action.Ys2 - action.Ys1) * scale + 'px';
+
+                div3.style.display = '';
+
+                expectedText = action.Text;
+            }
+        }
+
+    </script>
+</body>
+</html>

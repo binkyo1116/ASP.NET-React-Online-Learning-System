@@ -1,0 +1,16 @@
+﻿#newVarSelect {
+    width: 45%;
+    margin-left: 5px;
+}
+
+#newVar {
+    border-radius: 5px;
+    border: 1px solid rgb(206,212,218);
+    padding: 5px;
+    width: 45%;
+}
+
+#addButton {
+    width: 8%;
+    justify-self: center;
+}

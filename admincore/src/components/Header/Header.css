@@ -1,0 +1,27 @@
+﻿.buttonsRow {
+    margin: 120px 0px 15px;
+    padding: 10px 0px;
+}
+
+.pageTitle {
+    border-bottom: 1px solid rgb(206,212,218);
+    padding-bottom: 5px;
+}
+
+.pageTitle h3 {
+    font-size: 22px !important;
+}
+
+.buttonsRow a {
+    padding: 5px 30px;
+    background: #e1e4ea;
+    color: #3b4047;
+    border-radius: 40px;
+    text-decoration: none;
+    cursor: pointer !important;
+}
+
+.buttonsRow a:hover {
+    background: #ccd0d9;
+    color: #3b4047;
+}

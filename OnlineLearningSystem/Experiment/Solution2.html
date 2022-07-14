@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html style="height:80%;weight:100%">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <!-------------- bootstrap css -------------->
+    <link href="../Content/bootstrap.min.css" rel="stylesheet" />
+    <!-------------- font awesome css -------------->
+    <link href="../Content/font-awesome.min.css" rel="stylesheet" />
+    <!-------------- style css -------------->
+    <link href="../Content/style.css" rel="stylesheet" />
+    <!-------------- new landing page css -------------->
+    <link href="../Content/new-landing-page-v2.css" rel="stylesheet" />
+    <!-------------- animate css -------------->
+    <link href="../Content/animate.css" rel="stylesheet" />
+    <!-------------- owl carousel css -------------->
+    <link href="../Content/owl.carousel.min.css" rel="stylesheet" />
+    <!-------------- magnific-popup -------------->
+    <link href="../Content/magnific-popup.css" rel="stylesheet" />
+    <!-------------- responsive css -------------->
+    <link href="../Content/responsive.css" rel="stylesheet" />
+</head>
+<body style="height: 100%; width: 100%">
+    <p style="height: 50%; width: 80%" class="static-page-text" style="vertical-align:central">
+
+        Solucion con apply / sum: 
+        <br />
+
+        <textarea style="height:50%;width:80%">
+            def count_i(text):
+                return sum(map(lambda x : 1, filter(lambda x : x == 'i', text)))
+
+            # Pruebas Usadas
+            print("Entrada Utilizada: String Vacio")
+            print("Salida Esperada: 0")
+            print("Salida Obtenida: ", count_i(""))
+            print("Entrada Utilizada: 'i'")
+            print("Salida Esperada: 1")
+            print("Salida Obtenida: ", count_i("i"))
+            print("Entrada Utilizada: 'e'")
+            print("Salida Esperada: 0")
+            print("Salida Obtenida: ", count_i("a"))
+            print("Entrada Utilizada: 'It was the best of times, it was the worst of times, it was the age of wisdom'")
+            print("Salida Esperada: 5")
+            print("Salida Obtenida: ", count_i("It was the best of times, it was the worst of times, it was the age of wisdom"))        </textarea>
+    </p>
+</body>
+</html>

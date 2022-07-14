@@ -1,0 +1,66 @@
+﻿/*
+New style for Let's Use Data
+July 9, 2022
+*/
+
+
+/*
+Page: Course Objectives
+*/
+
+
+/* Box */
+.box.courseobjs {
+    padding: 2rem;
+    margin-bottom: 1.5rem;
+    width: 100%;
+}
+
+.box.courseobjs .module-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.8125rem;
+    margin-bottom: 0.5rem;
+}
+
+.box.courseobjs .module-objectives-label {
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+}
+
+
+/* Left (or top) module section */
+.modsec-lefttop {
+    flex-grow: 1;
+}
+
+/* Right (or bottom) module section */
+.modsec-rightbottom {
+    flex-grow: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+
+/* ProgressBar */
+.box.courseobjs .progress {
+    background-color: #DEE0E0;
+}
+.box.courseobjs div.progress-bar {
+    background: var(--palette-blue-normal);
+}
+.box.courseobjs div.progress-bar.full {
+    background: var(--palette-green-full);
+}
+
+
+/* button */
+.button.courseobjs {
+    line-height: 1.25rem;
+    width: 100%;
+}
+@media (min-width: 992px) {
+    .button.courseobjs { width: 14rem; }
+}

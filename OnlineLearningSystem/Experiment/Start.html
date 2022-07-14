@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html style="height:95%;width:95%">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <title></title>
+    <!-------------- bootstrap css -------------->
+    <link href="../Content/bootstrap.min.css" rel="stylesheet" />
+    <!-------------- font awesome css -------------->
+    <link href="../Content/font-awesome.min.css" rel="stylesheet" />
+    <!-------------- style css -------------->
+    <link href="../Content/style.css" rel="stylesheet" />
+    <!-------------- new landing page css -------------->
+    <link href="../Content/new-landing-page-v2.css" rel="stylesheet" />
+    <!-------------- animate css -------------->
+    <link href="../Content/animate.css" rel="stylesheet" />
+    <!-------------- owl carousel css -------------->
+    <link href="../Content/owl.carousel.min.css" rel="stylesheet" />
+    <!-------------- magnific-popup -------------->
+    <link href="../Content/magnific-popup.css" rel="stylesheet" />
+    <!-------------- responsive css -------------->
+    <link href="../Content/responsive.css" rel="stylesheet" />
+</head>
+<body style="height:100%;width:100%">
+    <table style="height: 100%; width: 100%">
+        <tr >
+            <td style="vertical-align:top">
+                <ul>
+                    <li style="list-style:none">
+                        Pasos
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#" onclick='nav("Introduction.html")'>Introduccion</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#" onclick='nav("../PollResponse.html?courseInstanceId=113&moduleId=477&pollGroupId=34&moduleObjectiveId=470")'>Encuesta Incial</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#" onclick='nav("../Interaction.html?courseInstanceId=113&moduleId=477&codingProblemId=330")'>Primer Problema</a>
+                    </li>
+                    <!--
+                <li>
+                    <a class="nav-link" href="#" onclick='nav("Solution1.html")'>Solucion</a>
+                </li>
+    -->
+                    <li>
+                        <a class="nav-link" href="#" onclick='nav("Material.html")'>Materiales</a>
+                    </li>
+
+                    <li>
+                        <a class="nav-link" href="#" onclick='nav("../Interaction.html?courseInstanceId=113&moduleId=477&codingProblemId=296")'>Segundo Problema</a>
+                    </li>
+                    <!--
+    <li>
+        <a class="nav-link" href="#" onclick='nav("Solution2.html")'>Solucion</a>
+    </li>
+        -->
+                    <li>
+                        <a class="nav-link" href="#" onclick='nav("../PollResponse.html?courseInstanceId=113&moduleId=477&pollGroupId=35&moduleObjectiveId=470")'>Encuesta Final</a>
+                    </li>
+                </ul>
+            </td>
+            <td style="width:85%">
+                <iframe id="frame" style="height:100%;width:100%" src="Introduction.html"></iframe>
+            </td>
+        </tr>
+    </table>
+    <script>
+        function nav(url)
+        {
+            document.getElementById('frame').src = url;
+        }
+    </script>
+</body>
+</html>

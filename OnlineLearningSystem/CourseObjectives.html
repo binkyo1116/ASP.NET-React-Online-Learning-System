@@ -1,0 +1,329 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="keywords" content="Data,learning">
+
+    <!-- Title & favicon -->
+    <title>Let's Use Data</title>
+    <link rel="favicon icon" href="favicon.png" type="image/png" />
+
+    <!-- Styles -->
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/fontawesome-free-6.1.1-web/css/all.min.css" rel="stylesheet" />
+    <link href="Content/style.css" rel="stylesheet" />
+    <link href="Content/custome-style.css" rel="stylesheet" />
+    <link href="Content/new-theme-style.css" rel="stylesheet" />
+    <link href="Content/styles/general.css" rel="stylesheet" />
+    <link href="Content/styles/course-objectives.css" rel="stylesheet" />
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-196054626-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-196054626-1');
+    </script>
+</head>
+<body>
+    <!--------------------------------Loader spinner ------------------------------------------>
+    <!--<div id="loader-spinner" class="loader-img loader-bg" style="display:block">
+        <img src="Content/images/Loder_Trancparent_bg.gif" />
+    </div>-->
+    <!--========================================Top Navbar=================================-->
+    <!--<div id="includedContent"></div>-->
+    <!--==================================================================================-->
+    <!------------------------------------------- page title section ----------------------->
+    <!--<section class="page-title">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2><span id="lblCourseTitle"></span></h2>
+                </div>
+            </div>
+        </div>
+    </section>-->
+    <!-------------------------------------- end page title section ----------------------->
+    <!--========================================Content area=================================-->
+    <!--<section class="page-content Alice-blue-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div>
+
+                        <div class="course-static-area">-->
+    <!-- -----------------------------calculate the students current and overall grade-------------------------------->
+    <!--<div class="row">
+        <div class="col-md-12 col-lg-6">
+            <h3>Summary</h3>
+            <div class="course-objective-intro">-->
+    <!--<h4>
+        <span id="lblCourseTitle"></span>
+    </h4>-->
+    <!--<span id="totalCurrentGrade"></span>-->
+    <!--&nbsp (GPA &nbsp-->
+    <!--<span style="visibility:hidden" id="totalCurrentGPA"></span>-->
+    <!--)-->
+    <!--<br />
+    <span id="totalGrade"></span>-->
+    <!--&nbsp (GPA &nbsp-->
+    <!--<span style="visibility:hidden" id="totalGPA"></span>-->
+    <!--)-->
+    <a href="" style="visibility:hidden; display: none">Start here</a><!--<br />-->
+    <!--<a href="#" id="syllabusLink">Syllabus</a><br />-->
+    <!--<br />
+                <span id="totalCompletion"></span><br />
+                <a href="" style="visibility:hidden">Start here</a><br />
+                <a href="#" id="syllabusLink">Syllabus</a><br />
+            </div>
+        </div>
+        <div class=" col-md-12 col-lg-6" style="position:relative">
+            <div id="loader-spinner-static-area" class="loader-img" style="display:none; position:relative;height:auto">
+                <img width="50" src="Content/images/Loder_Trancparent_bg.gif" />
+            </div>
+            <div id="pnlOverallGrade" class="overall-grade margin-b-1">
+                <div>
+                    <table class="table table-bordered font-size-13 box-bg-white">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th style="width:30%; text-align:center">Completion</th>
+                                <th style="width:15%; text-align:center">Weight</th>
+                                <th style="width:15%; text-align:center">Grade</th>
+                                <th style="width:15%; text-align:center">Total</th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr id="assessmentRow" style="display:none;">
+                                <td>Assessments</td>
+                                <td>
+                                    <div class="progress">
+                                        <div id="AssessmentCompletionProgressBar" class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+                                        </div>
+                                        <span class="progress-bar-percentage" id="assessmentCompletion"></span>
+                                    </div>
+                                </td>
+                                <td class="text-center">
+                                    <span id="assessmentWeight"></span>
+                                </td>
+                                <td class="text-center">
+                                    <span id="currentAssessmentGrade"></span>
+                                </td>
+                                <td class="text-center">
+                                    <span id="weightedAssessmentGrade"></span>
+                                </td>
+
+                            </tr>
+                            <tr id="quizRow" style="display:none;">
+                                <td>Quizzes</td>
+                                <td>
+                                    <div class="progress">
+                                        <div id="QuizCompletionProgressBar" class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+                                        </div>
+                                        <span class="progress-bar-percentage" id="quizCompletion"></span>
+                                    </div>
+                                </td>
+                                <td class="text-center">
+                                    <span id="quizWeight"></span>
+                                </td>
+                                <td class="text-center">
+                                    <span id="currentQuizGrade"></span>
+                                </td>
+                                <td class="text-center">
+                                    <span id="weightedQuizGrade"></span>
+                                </td>
+
+                            </tr>
+                            <tr id="materialRow" style="display:none;">
+                                <td>Materials</td>
+                                <td>
+                                    <div class="progress">
+                                        <div id="MaterialCompletionProgressBar" class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+                                        </div>
+                                        <span class="progress-bar-percentage" id="materialCompletion"></span>
+                                    </div>
+                                </td>
+                                <td class="text-center">
+                                    <span id="materialWeight"></span>
+                                </td>
+                                <td class="text-center">
+                                    <span id="currentMaterialGrade"></span>
+                                </td>
+                                <td class="text-center">
+                                    <span id="weightedMaterialGrade"></span>
+                                </td>
+
+                            </tr>
+                            <tr id="midtermRow" style="display:none;">
+                                <td>Midterm</td>
+                                <td>
+                                    <div class="progress">
+                                        <div id="MidtermCompletionProgressBar" class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+                                        </div>
+                                        <span class="progress-bar-percentage" id="midtermCompletion"></span>
+                                    </div>
+                                </td>
+                                <td class="text-center">
+                                    <span id="midtermWeight"></span>
+                                </td>
+                                <td class="text-center">
+                                    <span id="currentMidtermGrade"></span>
+                                </td>
+                                <td class="text-center">
+                                    <span id="weightedMidtermGrade"></span>
+                                </td>
+                            </tr>
+                            <tr id="finalRow" style="display:none;">
+                                <td>Final</td>
+                                <td>
+                                    <div class="progress">
+                                        <div id="FinalCompletionProgressBar" class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+                                        </div>
+                                        <span class="progress-bar-percentage" id="finalCompletion"></span>
+                                    </div>
+                                </td>
+                                <td class="text-center">
+                                    <span id="finalWeight"></span>
+                                </td>
+                                <td class="text-center">
+                                    <span id="currentFinalGrade"></span>
+                                </td>
+                                <td class="text-center">
+                                    <span id="weightedFinalGrade"></span>
+                                </td>
+
+                            </tr>
+                            <tr id="discussionRow" style="display:none;">
+                                <td>Discussion</td>
+                                <td>
+                                    <div class="progress">
+                                        <div id="DiscussionCompletionProgressBar" class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+                                        </div>
+                                        <span class="progress-bar-percentage" id="discussionCompletion"></span>
+                                    </div>
+                                </td>
+                                <td class="text-center">
+                                    <span id="discussionWeight"></span>
+                                </td>
+                                <td class="text-center">
+                                    <span id="currentDiscussionGrade"></span>
+                                </td>
+                                <td class="text-center">
+                                    <span id="weightedDiscussionGrade"></span>
+                                </td>
+
+                            </tr>
+                            <tr id="pollRow" style="display:none;">
+                                <td>Poll</td>
+                                <td>
+                                    <div class="progress">
+                                        <div id="PollCompletionProgressBar" class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+                                        </div>
+                                        <span class="progress-bar-percentage" id="pollCompletion"></span>
+                                    </div>
+                                </td>
+                                <td class="text-center">
+                                    <span id="pollWeight"></span>
+                                </td>
+                                <td class="text-center">
+                                    <span id="currentPollGrade"></span>
+                                </td>
+                                <td class="text-center">
+                                    <span id="weightedPollGrade"></span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+        </div>
+    </div>-->
+    <!----------------------------------------------------------------------------------------------------------------------------->
+    <!--<div id="hr-tag"></div>
+        <div class="row">
+            <div class="col-md-6">
+                <div style="overflow-x: auto">
+                    <div id="headingQuiz"></div>
+                    <div id="my_dataviz"></div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div style="overflow-x: auto">
+                    <div id="headingAss"></div>
+                    <div id="my_assessment_chart"></div>
+                </div>
+            </div>
+        </div>
+    </div>-->
+    <!----------------------------------------------------------------------------------------------------------------------------->
+    <!-------------------Announcement---------------------->
+    <!--<div class="">
+        <div id="PanelAnnouncement" style="display:none;" class="margin-top-10 margin-bottom-30">
+            <div class="wraper-area box-bg-white">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h6>Announcement</h6>
+                    </div>
+                    <div class="col-md-6 text-right">
+                        <a href="" id="a_announcemnts">
+                            <input type="button" id="ButtonAnnouncementList" class="btn btn-custom-round btn-sm" value="Announcement List" return false;" />
+                        </a>
+                    </div>
+                </div>
+                <span id="LabelAnnouncementTitle" class="label-header"></span>
+                <span id="LabelPublishedDate" class="label-header-time"></span>
+                <div class="margin-bottom-10"></div>
+                <span id="LabelAnnouncementDescription" class="label-anouncement"></span>
+            </div>
+        </div>
+    </div>-->
+    <!----------------------------------------------------------------------------------------------------------------------------->
+    <!--<div id="pnlPanel" class="margin-t-1">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>-->
+    <!--========================================footer area=================================-->
+    <!--<section class="footer-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="footer-content">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>-->
+    <!--=============================================================================-->
+    <!-----------------------------------Header-------------------------------------------->
+    <!--<div id="includedContent"></div>
+    <br />-->
+
+    <div id="header"></div>
+    <div id="course_objectives"></div>
+
+    <!-- Scripts -->
+    <script src="Scripts/jquery-3.5.1.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script type="text/javascript" src="PageScripts/Global.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.19/dist/sweetalert2.all.min.js"></script>
+    <!--<script type="text/javascript" src="/PageScripts/CourseObjectives.js"></script>-->
+    <!--<script type="text/javascript" src="/PageScripts/ModuleProgress.js"></script>-->
+
+    <script src="https://unpkg.com/react@17.0.2/umd/react.production.min.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@17.0.2/umd/react-dom.production.min.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone@7.14.7/babel.min.js"></script>
+
+    <script type="text/babel" src="PageScripts/ReactHeader.js"></script>
+    <script type="text/babel" src="PageScripts/ReactCourseObjectives.js"></script>
+</body>
+</html>

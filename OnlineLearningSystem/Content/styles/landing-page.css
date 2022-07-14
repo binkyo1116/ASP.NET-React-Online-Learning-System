@@ -1,0 +1,15 @@
+﻿/*
+New style for Let's Use Data
+July 6, 2022
+*/
+
+
+/*
+Page: Landing page (index)
+*/
+
+.textbox.landingpage {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.25rem;
+}

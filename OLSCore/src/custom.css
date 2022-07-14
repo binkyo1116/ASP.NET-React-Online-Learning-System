@@ -1,0 +1,135 @@
+body {
+  font-family: 'Poppins', sans-serif;
+}
+/* static page */
+.bg-contatiner {
+	background: linear-gradient(114.69deg, #23AEE9 -25.11%, #126EE2 52.74%);
+}
+
+.bg-hero {
+	background: url('assets/images/bg-hero.svg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 100%;
+	min-height: 100vh;
+}
+
+.custom-card {
+  background: #F8F8F8;
+  border-radius: 20px;
+  padding: 4rem;
+}
+
+/* text color */
+.text-cus-primary {
+  color: #0092CE;
+}
+.text-cus-secondary {
+  color: #B0B0B0;
+}
+.text-cus-dark {
+  color: #323232;
+}
+
+.py-44 {
+  padding-top: 1.375rem;
+  padding-bottom: 1.375rem;
+}
+/* font size */
+.font-18 {
+  font-size: 1.125rem;
+}
+.font-20 {
+  font-size: 1.25rem;
+  line-height: 1.875rem;
+}
+.font-24 {
+  font-size: 1.5rem;
+}
+.font-28 {
+  font-size: 1.75rem;
+  line-height: 2.625rem;
+}
+.font-40 {
+  font-size: 2.5rem;
+  line-height: 3.75rem;
+}
+
+/* font weight */
+.font-weight-600 {
+  font-weight: 600 !important;
+}
+
+/* custom buttons */
+.btn-cus-primary {
+  background: #0092CE;
+  border-radius: 8px;
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #FDFDFD;
+  border: none;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 0.3s all;
+}
+.btn-cus-primary:hover {
+  background: #1BAEEB;
+}
+.btn-cus-primary:active {
+}
+
+.btn-cus-secondary {
+  background: transparent;
+  border-radius: 8px;
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #0092CE;
+  border: 2px solid #0092CE;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 0.3s all;
+}
+.btn-cus-secondary:hover {
+  background: #ECF6FB;
+  color: #0092CE;
+  text-decoration: none;
+}
+.btn-cus-secondary:active {
+}
+
+/* custom link style */
+.link-cus-primary {
+  color: #0092CE;
+  text-decoration: none;
+}
+.link-cus-secondary {
+  color: #55B6DE;
+  text-decoration: none;
+}
+
+/*--------------------- Media query 1200 -------------------*/
+
+@media screen and (max-width: 1200px) {
+
+}
+
+/*--------------------- Media query 992 -------------------*/
+
+@media screen and (max-width: 992px) {
+
+}
+/*--------------------- Media query 680 -------------------*/
+
+@media screen and (max-width: 680px) {
+
+}
+
+/*--------------------- Media query 576 -------------------*/
+
+@media screen and (max-width: 576px) {
+  .bg-hero {
+    position: relative;
+  }
+}

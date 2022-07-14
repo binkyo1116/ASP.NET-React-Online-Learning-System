@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_51" data-name="Rectangle 51" width="1920" height="1080" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+    <linearGradient id="linear-gradient" x1="1.261" y1="0.017" x2="-0.117" y2="0.009" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#5ae6f9"/>
+      <stop offset="1" stop-color="#58eaf9"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0.743" y1="0.059" x2="-0.117" y2="0.009" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#57edf9"/>
+      <stop offset="1" stop-color="#65bffd"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-4" x1="1.062" y1="0.981" x2="0.002" y2="0.678" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#5bdefa"/>
+      <stop offset="1" stop-color="#65bdfd"/>
+    </linearGradient>
+  </defs>
+  <g id="Mask_Group_2" data-name="Mask Group 2" clip-path="url(#clip-path)">
+    <g id="Group_436" data-name="Group 436">
+      <rect id="Rectangle_35" data-name="Rectangle 35" width="837.676" height="169.317" rx="84.659" transform="translate(1073.952 327.371) rotate(-42)" opacity="0.27" fill="url(#linear-gradient)"/>
+      <rect id="Rectangle_37" data-name="Rectangle 37" width="1527.421" height="169.317" rx="84.659" transform="translate(1074.67 788.901) rotate(-42)" opacity="0.27" fill="url(#linear-gradient-2)"/>
+      <rect id="Rectangle_36" data-name="Rectangle 36" width="837.676" height="103.59" rx="51.795" transform="translate(1395.877 314.151) rotate(-42)" opacity="0.27" fill="url(#linear-gradient)"/>
+      <rect id="Rectangle_38" data-name="Rectangle 38" width="951.742" height="101.59" rx="50.795" transform="translate(1306.778 884.696) rotate(-42)" opacity="0.27" fill="url(#linear-gradient-4)"/>
+      <rect id="Rectangle_39" data-name="Rectangle 39" width="837.676" height="169.317" rx="84.659" transform="translate(-441.048 1061.371) rotate(-42)" opacity="0.26" fill="url(#linear-gradient)"/>
+      <rect id="Rectangle_41" data-name="Rectangle 41" width="1527.421" height="169.317" rx="84.659" transform="translate(-624.33 1656.901) rotate(-42)" opacity="0.26" fill="url(#linear-gradient-2)"/>
+      <rect id="Rectangle_40" data-name="Rectangle 40" width="837.676" height="103.59" rx="51.795" transform="translate(-419.123 1299.151) rotate(-42)" opacity="0.26" fill="url(#linear-gradient)"/>
+      <rect id="Rectangle_42" data-name="Rectangle 42" width="951.742" height="101.59" rx="50.795" transform="translate(-171.222 1504.696) rotate(-42)" opacity="0.26" fill="url(#linear-gradient-4)"/>
+      <g id="Group_382" data-name="Group 382" transform="translate(-145 781)" opacity="0.58">
+        <circle id="Ellipse_6" data-name="Ellipse 6" cx="9" cy="9" r="9" transform="translate(736 -620)" fill="#fff" opacity="0.55"/>
+        <ellipse id="Ellipse_41" data-name="Ellipse 41" cx="9" cy="9.5" rx="9" ry="9.5" transform="translate(736 -495)" fill="#fff" opacity="0.55"/>
+        <circle id="Ellipse_21" data-name="Ellipse 21" cx="9" cy="9" r="9" transform="translate(736 -557)" fill="#fff" opacity="0.55"/>
+        <ellipse id="Ellipse_29" data-name="Ellipse 29" cx="9" cy="9.5" rx="9" ry="9.5" transform="translate(736 -432)" fill="#fff" opacity="0.55"/>
+        <ellipse id="Ellipse_11" data-name="Ellipse 11" cx="9" cy="9.5" rx="9" ry="9.5" transform="translate(736 -589)" fill="#fff" opacity="0.55"/>
+        <circle id="Ellipse_36" data-name="Ellipse 36" cx="9" cy="9" r="9" transform="translate(736 -463)" fill="#fff" opacity="0.55"/>
+        <ellipse id="Ellipse_16" data-name="Ellipse 16" cx="9" cy="9.5" rx="9" ry="9.5" transform="translate(736 -526)" fill="#fff" opacity="0.55"/>
+        <circle id="Ellipse_26" data-name="Ellipse 26" cx="9" cy="9" r="9" transform="translate(736 -400)" fill="#fff" opacity="0.55"/>
+        <circle id="Ellipse_8" data-name="Ellipse 8" cx="9" cy="9" r="9" transform="translate(798 -620)" fill="#fff" opacity="0.55"/>
+        <ellipse id="Ellipse_42" data-name="Ellipse 42" cx="9" cy="9.5" rx="9" ry="9.5" transform="translate(798 -495)" fill="#fff" opacity="0.55"/>
+        <circle id="Ellipse_22" data-name="Ellipse 22" cx="9" cy="9" r="9" transform="translate(798 -557)" fill="#fff" opacity="0.55"/>
+        <ellipse id="Ellipse_30" data-name="Ellipse 30" cx="9" cy="9.5" rx="9" ry="9.5" transform="translate(798 -432)" fill="#fff" opacity="0.55"/>
+        <ellipse id="Ellipse_13" data-name="Ellipse 13" cx="9" cy="9.5" rx="9" ry="9.5" transform="translate(798 -589)" fill="#fff" opacity="0.55"/>
+        <circle id="Ellipse_37" data-name="Ellipse 37" cx="9" cy="9" r="9" transform="translate(798 -463)" fill="#fff" opacity="0.55"/>
+        <ellipse id="Ellipse_18" data-name="Ellipse 18" cx="9" cy="9.5" rx="9" ry="9.5" transform="translate(798 -526)" fill="#fff" opacity="0.55"/>
+        <circle id="Ellipse_27" data-name="Ellipse 27" cx="9" cy="9" r="9" transform="translate(798 -400)" fill="#fff" opacity="0.55"/>
+        <circle id="Ellipse_7" data-name="Ellipse 7" cx="9" cy="9" r="9" transform="translate(767 -620)" fill="#fff" opacity="0.55"/>
+        <ellipse id="Ellipse_43" data-name="Ellipse 43" cx="9" cy="9.5" rx="9" ry="9.5" transform="translate(767 -495)" fill="#fff" opacity="0.55"/>
+        <circle id="Ellipse_23" data-name="Ellipse 23" cx="9" cy="9" r="9" transform="translate(767 -557)" fill="#fff" opacity="0.55"/>
+        <ellipse id="Ellipse_31" data-name="Ellipse 31" cx="9" cy="9.5" rx="9" ry="9.5" transform="translate(767 -432)" fill="#fff" opacity="0.55"/>
+        <ellipse id="Ellipse_12" data-name="Ellipse 12" cx="9" cy="9.5" rx="9" ry="9.5" transform="translate(767 -589)" fill="#fff" opacity="0.55"/>
+        <circle id="Ellipse_38" data-name="Ellipse 38" cx="9" cy="9" r="9" transform="translate(767 -463)" fill="#fff" opacity="0.55"/>
+        <ellipse id="Ellipse_17" data-name="Ellipse 17" cx="9" cy="9.5" rx="9" ry="9.5" transform="translate(767 -526)" fill="#fff" opacity="0.55"/>
+        <circle id="Ellipse_28" data-name="Ellipse 28" cx="9" cy="9" r="9" transform="translate(767 -400)" fill="#fff" opacity="0.55"/>
+        <circle id="Ellipse_9" data-name="Ellipse 9" cx="9" cy="9" r="9" transform="translate(829 -620)" fill="#fff" opacity="0.55"/>
+        <ellipse id="Ellipse_44" data-name="Ellipse 44" cx="9" cy="9.5" rx="9" ry="9.5" transform="translate(829 -495)" fill="#fff" opacity="0.55"/>
+        <circle id="Ellipse_24" data-name="Ellipse 24" cx="9" cy="9" r="9" transform="translate(829 -557)" fill="#fff" opacity="0.55"/>
+        <ellipse id="Ellipse_32" data-name="Ellipse 32" cx="9" cy="9.5" rx="9" ry="9.5" transform="translate(829 -432)" fill="#fff" opacity="0.55"/>
+        <ellipse id="Ellipse_14" data-name="Ellipse 14" cx="9" cy="9.5" rx="9" ry="9.5" transform="translate(829 -589)" fill="#fff" opacity="0.55"/>
+        <circle id="Ellipse_39" data-name="Ellipse 39" cx="9" cy="9" r="9" transform="translate(829 -463)" fill="#fff" opacity="0.55"/>
+        <ellipse id="Ellipse_19" data-name="Ellipse 19" cx="9" cy="9.5" rx="9" ry="9.5" transform="translate(829 -526)" fill="#fff" opacity="0.55"/>
+        <circle id="Ellipse_33" data-name="Ellipse 33" cx="9" cy="9" r="9" transform="translate(829 -400)" fill="#fff" opacity="0.55"/>
+        <circle id="Ellipse_10" data-name="Ellipse 10" cx="9" cy="9" r="9" transform="translate(860 -620)" fill="#fff" opacity="0.55"/>
+        <ellipse id="Ellipse_45" data-name="Ellipse 45" cx="9" cy="9.5" rx="9" ry="9.5" transform="translate(860 -495)" fill="#fff" opacity="0.55"/>
+        <circle id="Ellipse_25" data-name="Ellipse 25" cx="9" cy="9" r="9" transform="translate(860 -557)" fill="#fff" opacity="0.55"/>
+        <ellipse id="Ellipse_34" data-name="Ellipse 34" cx="9" cy="9.5" rx="9" ry="9.5" transform="translate(860 -432)" fill="#fff" opacity="0.55"/>
+        <ellipse id="Ellipse_15" data-name="Ellipse 15" cx="9" cy="9.5" rx="9" ry="9.5" transform="translate(860 -589)" fill="#fff" opacity="0.55"/>
+        <circle id="Ellipse_40" data-name="Ellipse 40" cx="9" cy="9" r="9" transform="translate(860 -463)" fill="#fff" opacity="0.55"/>
+        <ellipse id="Ellipse_20" data-name="Ellipse 20" cx="9" cy="9.5" rx="9" ry="9.5" transform="translate(860 -526)" fill="#fff" opacity="0.55"/>
+        <circle id="Ellipse_35" data-name="Ellipse 35" cx="9" cy="9" r="9" transform="translate(860 -400)" fill="#fff" opacity="0.55"/>
+      </g>
+    </g>
+  </g>
+</svg>

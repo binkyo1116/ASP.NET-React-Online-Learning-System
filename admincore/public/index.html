@@ -1,0 +1,116 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+    <base href="%PUBLIC_URL%/" />
+    <!--
+      manifest.json provides metadata used when your web app is added to the
+      homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+          crossorigin="anonymous" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+
+    <title>Let's Use Data</title>
+    <style>
+        .margin-bottom-8 {
+            margin - bottom: 8px;
+        }
+
+        #cke_1_contents {
+            height: 150px !important;
+        }
+
+        #TextBoxExpectedOutput {
+            height: 195px !important;
+        }
+
+        #TextBoxTestCode {
+            height: 195px !important;
+        }
+
+        #cke_EditorInstruction {
+            margin - bottom: 8px;
+        }
+
+        #cke_HighlightText .cke_top {
+            display: none !important;
+            visibility: hidden !important;
+            font-size: 16px !important;
+        }
+
+        #cke_HighlightText {
+            font - size: 13px !important;
+            line-height: 21 !important;
+        }
+
+        body {
+            font - family: 'Raleway', sans-serif;
+            font-size: 16px;
+            line-height: 21px;
+            /* color: #3b4047; */
+            background-color: #fff;
+        }
+
+        div#HighlightText {
+            border: 1px solid gainsboro;
+            border-radius: 3px;
+        }
+
+            div#HighlightText:focus {
+                color: #495057;
+                background-color: #fff;
+                border-color: #80bdff;
+                outline: 0 !important;
+                box-shadow: 0 0 0 0.2rem rgb(0 123 255 / 25%);
+            }
+    </style>
+
+    <!---------------- Global site tag (gtag.js) - Google Analytics ------------------>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-196054626-1">
+    </script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+                function gtag() {dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-196054626-1');
+    </script>
+    <!------------------------------Close Google Analytics---------------------------->
+</head>
+  <body>
+    <noscript>
+      You need to enable JavaScript to run this app.
+    </noscript>
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  </body>
+</html>

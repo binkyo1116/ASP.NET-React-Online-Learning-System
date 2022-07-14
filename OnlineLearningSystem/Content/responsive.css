@@ -1,0 +1,177 @@
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (max-width: 400px) {
+    .form-check .form-check-input {
+        float: none;
+        margin-left: 0
+    }
+
+    .d-flex {
+        display: grid !important;
+    }
+
+    hr.quick-link_divider {
+        display: none !important;
+    }
+
+    .justify-content-between {
+        justify-content: center !important;
+    }
+
+    .overall-grade .progress {
+        width: 57%;
+    }
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (max-width: 480px) {
+    .overall-grade .progress {
+        width: 60%;
+    }
+
+    .code-lines {
+        min-height: auto !important;
+    }
+
+    .interaction-code-bottom .col-md-6.text-right {
+        text-align: left !important;
+    }
+
+    .interaction-code-bottom {
+        height: auto;
+        padding: 1rem 2rem;
+    }
+
+        .interaction-code-bottom .btn-custom-round {
+            margin-bottom: 5px;
+        }
+
+    tbody#calendar-body tr td div {
+        min-height: auto !important;
+        min-width: auto !important;
+    }
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (max-width: 767px) {
+    .gradeable-textbox-submit-btn-area {
+        text-align: center;
+        margin-top: .5rem;
+    }
+
+    .interaction-code-bottom .btn-custom-round {
+        min-width: 90px;
+        padding: 5px 18px;
+        font-size: 14px;
+    }
+
+    #feedbackList .feedbackDes, #feedbackList .feedbackComm {
+        word-break: break-word;
+    }
+
+    .code-lines {
+        min-height: auto !important;
+    }
+
+    .calender-left {
+        display: grid !important;
+    }
+}
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (max-width: 991px) {
+
+    .course-o-access-btn {
+        margin-top: 1rem;
+    }
+
+    .interaction-header {
+        border-top: 1px solid gray;
+    }
+
+    .interaction-c-box-right {
+        border-left: none;
+    }
+
+    .support-ticket-btn-area {
+        text-align: center;
+    }
+
+    .profile-update .text-right {
+        text-align: center !important;
+    }
+
+    .profile-update .img-upload-area {
+        text-align: center !important;
+    }
+
+    .coding-area {
+        border-bottom: 1px solid gray;
+        border-left: solid 1px gray;
+        border-right: 1px solid gray;
+        border-top: 1px solid gray;
+    }
+
+    .interaction-header {
+        font-size: 15px;
+    }
+
+    .grid-lg-margin-r-1 {
+        margin-right: 0;
+    }
+
+    .module-item-content_area {
+        width: 330px;
+    }
+}
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (max-width: 1200px) {
+
+    .modal-objective .m-card-btn {
+        font-size: 12px;
+    }
+
+    tbody#calendar-body tr td div {
+        min-height: 30px !important;
+        min-width: 23px !important;
+    }
+
+    .module-item-content_area {
+        width: 280px;
+    }
+}
+
+@media (max-width: 1300px) {
+
+    .module-item-content_area {
+        width: 300px;
+    }
+}
+
+@media (max-width: 1400px) {
+
+    .module-item-content_area {
+        width: 335px;
+    }
+}

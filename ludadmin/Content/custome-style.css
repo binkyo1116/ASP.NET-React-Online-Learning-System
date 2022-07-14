@@ -1,0 +1,1043 @@
+﻿
+/*==========================Log page Sdtyle================*/
+html, body {
+    height: 100%;
+}
+
+.d-table {
+    display: table;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.d-cell {
+    display: table-cell;
+    width: 100%;
+    vertical-align: middle;
+}
+
+span#lblMessage {
+    color: red;
+    font-weight: normal !important;
+    /* padding-top: 10px; */
+    display: block;
+}
+
+.logBox {
+    text-align: left;
+    border: 1px solid #ddd;
+    padding: 40px 60px;
+    display: inline-block;
+}
+
+.logBox-newLogin {
+    padding: 0 !important;
+    display: inline-block;
+    /* background: #353b6d !important; */
+    /* color: white; */
+    /* height: 393px; */
+    /* width: 764px; */
+}
+
+.logBox h3 {
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+
+
+.loginBtn {
+    padding: 2px 61px;
+    width: 100%;
+    font-size: 20px;
+    font-weight: 600;
+    /* box-shadow: 3px 3px 2px #0c0e38; */
+    background: #0c0e38;
+}
+
+.logBox h2 {
+    font-size: 22px;
+    color: #434a54;
+    margin-top: 30px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.logBox .form-group span.span-padding {
+    font-size: 13px;
+    margin-top: 10px;
+    display: block;
+    color: #000;
+}
+
+.logBox .form-group span a {
+    color: #2c79bf;
+    font-size: 13px;
+    border-bottom: 1px solid #afafaf;
+    padding: 3px 8px;
+}
+
+    .logBox .form-group span a:hover {
+        background: #eee;
+        border-bottom: 1px solid #eee;
+    }
+
+.logBox .image-area {
+    width: 428px;
+}
+
+.image-area {
+    /* margin: 0 15px 0 0; */
+}
+
+.logBox img {
+    width: 205px;
+    /* height: auto; */
+    margin-top: -19px;
+    /* position: relative; */
+    /* height: 100%; */
+}
+
+.logBox {
+    box-shadow: 3px 3px 9px #ccd5e2;
+    background: #fff;
+}
+
+.LogingArea {
+    background: #e7ebf1;
+}
+
+.loginRightBorder {
+    border-right: 2px solid #ffffff;
+}
+
+.LogingArea strong {
+    margin-bottom: 8px;
+    display: block;
+    font-size: 19px;
+    line-height: 13px;
+}
+
+.LogingArea .log-icon i {
+    /* width: 25px; */
+    /* height: 25px; */
+    /* background: red; */
+    /* border: 1px solid #31a1d7; */
+    /* border-radius: 50%; */
+    /* align-items: center; */
+    padding: 0px 5px;
+    font-size: 25px;
+}
+
+.LogingArea .log-icon i {
+    position: absolute;
+    top: 27px;
+    left: 7px;
+    color: #3ab3f0;
+}
+
+.log-box-style input[type=text] {
+    padding-left: 40px;
+    font-size: 15px; /* height: 43px; */
+}
+
+.log-box-style input[type=text], .log-box-style input[type=Password] {
+    padding-left: 44px;
+    font-size: 15px;
+    /*background: #31a1d7 !important; 
+    border: 1px solid #1f8ec3;
+    color: #fff;*/
+    /* box-shadow: 3px 3px 2px #0c0e38; */
+    margin-bottom: 6px;
+    /* height: 43px; */
+    border: 1px solid #35aeef;
+}
+
+.log-icon {
+    position: relative;
+    top: -13px;
+}
+
+.btn-loging-sm {
+    /* box-shadow: 3px 3px 2px #0c1038; */
+    font-size: 13px;
+    background: #35aeef;
+    padding: 7px 22px;
+    color: #fff;
+}
+
+.log-box-style {
+    margin: 45px;
+    /*width: 290px;*/
+    /*font-family: 'Roboto', sans-serif;*/
+}
+
+.login-notice-area {
+    margin-top: 7px;
+    margin-bottom: 7px;
+    height: 16px;
+}
+
+span.login-label {
+    display: block;
+    /* margin-bottom: 10px; */
+    margin-left: 5px;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+/*=============================Close  login style=======================*/
+/*============================= Top navbar style==========================*/
+section.top-navbar-area {
+    background: #2c79bf;
+    padding-top: 30px;
+    color: #fff;
+    padding-bottom: 25px;
+    box-shadow: 0px 1px 2px #0e3c65;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 20000;
+}
+
+.navbar-light .navbar-brand {
+    font-size: 27px;
+    font-weight: 600;
+    color: #fff;
+    padding-left: 72px;
+}
+
+    .navbar-light .navbar-brand:hover {
+        color: #f7f7f7;
+    }
+
+.navbar-light .navbar-nav .nav-link {
+    color: #fff;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+    .navbar-light .navbar-nav .nav-link:hover {
+        color: #f7f7f7;
+    }
+
+.brand-logo img {
+    position: absolute;
+    top: -126px;
+}
+
+/*============================= Search section ==========================*/
+.sp-label {
+    margin-left: 15px;
+    margin-bottom: 5px;
+    display: inline-block;
+    font-size: 15px !important;
+    font-weight: normal !important;
+}
+
+.course-select-list {
+    border: 1px solid #2c79bf;
+    font-size: 14px;
+    border-radius: 25px;
+    height: 40px;
+    padding: 0 15px;
+    width: 410px;
+    font-family: 'Roboto', sans-serif;
+    margin-right: 15px;
+}
+
+.course-search-btn {
+    height: 40px;
+    padding: 0px 45px;
+    /* border-radius: 25px; */
+    /* margin: 8px 0; */
+}
+
+input#ctlLogout_btnLogout, #ctlLogout_btnComment, .btn-profile {
+    border-radius: 18px;
+    padding: 4px 25px;
+    border: solid 1px #2c79bf;
+    font-size: 13px;
+    background: #fff;
+    margin-bottom: 10px;
+    line-height: 18px;
+    display: inline-block;
+}
+
+    input#ctlLogout_btnLogout:hover, #ctlLogout_btnComment:hover, .btn-profile:hover {
+        background: #2c79bf;
+        transition: .3s;
+        color: #fff;
+    }
+/*============================= Content section ==========================*/
+.content-header h2 {
+    font-size: 30px;
+    color: #8b929c;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.content-img img {
+    width: 85%;
+}
+
+.content-img {
+    text-align: center;
+}
+/*============================= footer section ==========================*/
+.footer-area {
+    background: #ccd0d9
+}
+
+.footer-content {
+    /* height: 89px; */
+    width: 100%;
+    padding: 15px 0;
+}
+
+.footer-area {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+/*============================= Course Objective page ==========================*/
+.course-objective-area {
+    width: 100%;
+}
+
+input, button, select, optgroup, textarea {
+    line-height: inherit;
+}
+
+.course-objective-area .due-date {
+    fill: #6a7077 !important;
+}
+/*----------------------Progress bar-----------------*/
+.progress .progress-bar span {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 0;
+    top: 8px;
+}
+
+/*.progress-bar {
+    background-color: #7fd4f7;
+    overflow: initial;
+    color: #242527;
+}*/
+.progress-bar {
+    border-radius: 5rem;
+    background: linear-gradient(260deg, rgba(47, 220, 238, 1) -15%, rgba(18, 108, 226, 1) 150%);
+}
+
+/*.progress {
+    border-radius: 0;
+    position: relative;
+}*/
+.progress {
+    display: flex;
+    height: 0.5rem;
+    overflow: inherit;
+    font-size: .75rem;
+    background-color: #D6D6D6;
+    border-radius: 5rem;
+    position: relative;
+}
+
+.overall-grade .progress {
+    width: 77%;
+}
+
+.overall-grade .progress-bar-percentage {
+    position: absolute;
+    margin-top: 2px;
+    font-weight: 700;
+    color: #38A0F3;
+    right: -36px;
+}
+
+.module-progress .progress-bar-percentage {
+    right: -65px;
+    position: absolute;
+    margin-top: -9px;
+    font-weight: 700;
+    color: #38A0F3;
+    font-size: 1.1rem;
+}
+
+.module-progress .progress {
+    width: 80%;
+}
+
+.bg-light-blue {
+    background: #7fd4f7;
+}
+
+.custom-border {
+    border: 1px solid #dee2e6;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    display: inline-block;
+    width: 100%;
+}
+
+.custom-border-without-p {
+    border: 1px solid #dee2e6;
+    margin: 1rem 0;
+    display: inline-block;
+    width: 100%;
+}
+
+.custom-border-without-margin {
+    border: 1px solid #dee2e6;
+    margin: 0;
+    display: inline-block;
+    width: 100%;
+}
+
+.module-progress .due-date {
+    font: 14px sans-serif;
+    color: #6a7077 !important;
+}
+
+.font-sans-serif {
+    font-family: sans-serif;
+}
+
+.module-progress .progress {
+    margin-top: 8px;
+}
+
+.course-static-area .progress {
+    margin-top: 7px;
+}
+.course-objective-intro .result-span{
+    color: #38a0f2;
+}
+.box-bg-white {
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.08);
+    background-color: #fff;
+}
+
+.custom-border-light {
+    /* border: 1px solid #e8ecf1; */
+    padding: 2rem;
+    margin-bottom: 2rem;
+    display: inline-block;
+    width: 100%;
+}
+
+.grade-gpa span {
+    color: #AFAFAF;
+}
+
+.course-objective-intro * {
+    margin-bottom: 5px;
+    display: inline-block;
+    font-size:15px;
+}
+/*============================= Modal Objective page ==========================*/
+.modal-objective #form1 p {
+    font-size: 17px;
+}
+
+.border-bottom50 {
+    border-bottom: 1px solid #dde0e6;
+    width: 350px;
+    margin-bottom: 10px;
+}
+
+.modal-objective #form1 ul {
+    list-style-image: url('images/bulet3.png')
+}
+/*============================= Quiz page ==========================*/
+.quiz-set {
+    border: 1px solid #ccd0d9;
+    padding: 15px 15px 15px 15px;
+    margin: 15px 0;
+}
+
+    .quiz-set span {
+        line-height: 2em;
+    }
+
+span.quiz-ques {
+    font-weight: 700;
+    padding-right: 2px;
+}
+
+.quiz-set input[type=text] {
+    border-radius: 2px;
+    border: 1px solid #ccd0d9;
+    padding: 1px 5px;
+    margin: 2px 2px;
+    width: 400px;
+    display: inline-block;
+}
+
+.quiz-set input[type=submit] {
+    border-radius: 18px;
+    padding: 5px 30px;
+    border: none;
+    font-size: 15px;
+    background: #2c79bf;
+    color: #fff;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    /* float: right; */
+}
+
+#btnSubmit {
+    border-radius: 18px;
+    padding: 8px 40px;
+    border: none;
+    font-size: 18px;
+    background: #2c79bf;
+    color: #fff;
+    margin-top: 15px;
+    margin-right: 5px;
+    margin-bottom: 30px;
+}
+
+    .quiz-set input[type=submit]:hover, #btnSubmit:hover {
+        color: #3b4047;
+        text-decoration: none;
+        background-color: #ccd0d9;
+        transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -webkit-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+    }
+
+.r-source span {
+    margin-left: 121px;
+}
+
+.gradeable-img-button {
+    display: inline-block;
+    margin: 10px 10px;
+}
+/*============================= Interaction page ==========================*/
+.Interaction-area #Panel1 p {
+    margin-bottom: 15px;
+}
+
+.Interaction-area textarea, #custome-codeblock {
+    width: 100%;
+    padding: 30px 15px;
+    margin-bottom: 30px;
+    border: 1px solid #ccd0d9;
+    border-radius: 2px;
+    box-shadow: 3px 3px 9px #ccd5e2;
+    background: #fff;
+    border-left: 4px solid #2c79bf;
+    overflow: auto;
+    word-wrap: break-word;
+    font-size: 15px;
+}
+
+    .Interaction-area textarea#txtInstructions {
+        height: 350px;
+        /*font-family: Consolas,"courier new";*/
+    }
+
+    .Interaction-area textarea#txtCode1, #custome-codeblock {
+        font-family: Consolas,"courier new";
+        line-height: 30px;
+    }
+
+#custome-codeblock {
+    height: auto;
+}
+
+/*.Interaction-area textarea#txtCode {
+    display: none;
+}*/
+
+.Interaction-area textarea#txtOutput {
+    height: 290px;
+    font-family: Consolas,"courier new";
+    line-height: 22px;
+}
+
+.Interaction-area #Panel3 input[type=submit] {
+    border-radius: 18px;
+    padding: 5px 30px;
+    border: none;
+    font-size: 15px;
+    background: #2c79bf;
+    color: #fff;
+    margin-top: 10px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+
+.Interaction-area #Panel3 input[type=text] {
+    border-radius: 2px;
+    border: 1px solid #ccd0d9;
+    padding: 5px 15px;
+    margin: 0 2px;
+    margin-bottom: 15px;
+}
+/*============================= feedback page ==========================*/
+
+.feedback-area {
+}
+
+    .feedback-area #Label1 {
+        font-weight: 500;
+        font-size: 20px;
+        margin-top: 30px;
+        display: inline-block;
+    }
+
+    .feedback-area textarea {
+        width: 100%;
+        height: 250px;
+        padding: 30px 15px;
+        /* margin-bottom: 30px; */
+        border: 1px solid #ccd0d9;
+        border-radius: 12px;
+        background: #ffffff;
+        overflow: auto;
+        word-wrap: break-word;
+        line-height: 22px;
+    }
+
+.feedback-content-img img {
+    margin-top: 30px;
+    width: 100%;
+}
+/*===================Entry Page Design=====================*/
+.custome-textarea {
+    font-size: 13px;
+    min-height: 120px !important;
+}
+
+.font-size-13 {
+    font-size: 13px !important;
+}
+
+.font-size-15 {
+    font-size: 15px !important;
+}
+
+.table-fixed {
+    width: 100%;
+    word-wrap: break-word;
+}
+
+.wrape-text-area {
+    word-break: break-word;
+    /* width: 150px; */
+    display: inline-block;
+}
+
+.table-layout-fixed {
+    table-layout: fixed;
+}
+
+.wraper-area .create-activity-area input[type=Text], .wraper-area .create-activity-area select,
+.wraper-area .create-activity-area textarea,
+.wraper-area .create-test-area textarea, .wraper-area .create-test-area input[type=Text] {
+    margin-bottom: 8px;
+}
+
+.wraper-area .create-test-area textarea {
+    height: 210px;
+}
+
+.wraper-area .create-activity-area input[type=submit] {
+    /* margin-bottom: 10px; */
+    /*padding: 2px 15px !important;*/
+}
+
+.wraper-area .create-activity-area .custome-form-group select {
+    display: inline-block;
+    width: 250px;
+    float: right;
+}
+
+.create-activity-area .custome-form-group {
+    clear: both;
+}
+
+.wraper-area .create-activity-area textarea {
+    height: 150px;
+}
+
+.header-drop-down {
+    font-size: 13px;
+    height: 30px;
+    width: 135px;
+}
+/*===================Material Page Design=====================*/
+.header {
+    font-weight: 500;
+    font-size: 20px;
+    display: inline-block;
+}
+
+.material-page-area input[type=text] {
+    /* border-radius: 2px; */
+    /* border: 1px solid #ccd0d9; */
+    padding: 1px 15px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-right: 15px;
+    width: 390px;
+    display: inline-block;
+}
+
+.material-page-area img {
+    width: 220px;
+}
+
+.wraper-area {
+    border: 1px solid #e4e6e8;
+    padding: 15px;
+    border-radius: 12px;
+}
+
+.form-control {
+    border: 1px solid #dadcde;
+}
+/*===================Sign Up=====================*/
+
+@media (min-width: 576px) {
+    .sign-up-box {
+        min-width: 600px;
+    }
+}
+
+.sign-up-box label {
+    margin-bottom: 5px;
+    margin-left: 10px;
+}
+
+.sign-up-box span {
+    margin-bottom: 5px
+}
+
+/*===================Add Student Course=====================*/
+.AddStudentcourse-list .sp-label {
+    /* font-weight: 600 !important; */
+    /* margin-right: 5px; */
+    /* font-size: 13px; */
+}
+/*===================Admin Panel=====================*/
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    color: #fbfbfb;
+    background-color: #2c79bf;
+    border-radius: 2px;
+}
+
+.border-right {
+    border-right: 1px solid #dde0e6;
+}
+
+.Admin-area input[type=submit] {
+    border-radius: 5px;
+    padding: 10px 30px;
+    border: solid 1px #2c79bf;
+    font-size: 15px;
+    display: inline-block;
+    margin: 10px;
+    background: #fff;
+}
+
+    .Admin-area input[type=submit]:hover {
+        background-color: #ccd0d9;
+        border: solid 1px #ccd0d9;
+        transition: .3s;
+        color: #fff;
+    }
+/*===================Admin Panel=====================*/
+.profile-update label {
+    font-size: 15px;
+}
+
+.update-profile-image img {
+    /*border-radius: 50%;*/
+    width: 150px;
+    /*height: 150px;*/
+    /*box-shadow: 3px 3px 45px #d6dade;*/
+}
+
+.btn-upload-img {
+    padding: 3px 23px;
+    background: #5a94c5;
+    color: #ffffff;
+    border-radius: 0;
+}
+
+/*===================Poll Panel=====================*/
+.content-area {
+    margin-top: 120px;
+    padding-bottom: 50px;
+}
+
+.margin-left-right-30 {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.btn-outline-box {
+    border: solid 1px #2c79bf;
+    font-size: 15px;
+    display: inline-block;
+    background: #fff;
+}
+
+.poll-left-panel a {
+    font-size: 15px;
+    margin: 5px 0px;
+}
+
+.add-poll-area input[type=text], .add-poll-area textarea {
+    font-size: 13px !important;
+}
+
+.add-pool-option input[type=text] {
+    margin-bottom: 10px;
+}
+/*.add-poll-area textarea {
+    min-height: 80px !important;
+}*/
+
+.video-fram {
+    border-top: 25px solid #cad0dc;
+    border-radius: 20px 20px 0 0;
+    border-bottom: 14px solid #cad0dc;
+}
+
+.lbl-h {
+    font-size: 25px;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.lbl-p {
+    font-size: 15px;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+/*---------------------------------------*/
+.btn-collapse {
+    height: 30px;
+    width: 42px;
+    background-repeat: no-repeat;
+    background-image: url('images/RightArrow.png');
+    cursor: pointer;
+    background-position: 5px 0px;
+}
+
+.btn-expand {
+    height: 30px;
+    width: 42px;
+    background-repeat: no-repeat;
+    background-image: url(images/DownArrow.png);
+    cursor: pointer;
+    background-position: 5px 0px;
+}
+
+.SUBDIV table {
+    border: 0px;
+    border-left: 1px solid #dee2e6;
+}
+
+.poll-response-list-view {
+    font-size: 13px;
+    line-height: 20px;
+}
+
+    .poll-response-list-view td {
+        padding: 5px;
+    }
+
+    .poll-response-list-view th {
+        padding: 5px;
+        text-align: center;
+    }
+/*===================Poll Response Page=====================*/
+.thumbs-img-icon {
+    width: 23px;
+    margin-right: 18px;
+    /* box-shadow: 4px 1px 1px #c5c5c5; */
+    /* border-radius: 50%; */
+    position: relative;
+    top: 6px;
+}
+
+.video-thumbnail {
+    padding: 0.25rem;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    border-radius: 0.25rem;
+}
+
+.display-block {
+    display: block;
+}
+
+.thumb-area {
+    display: inline-block;
+    position: relative;
+}
+
+.poll-selected-opp-panel {
+    margin-bottom: 1rem;
+    padding: 5px;
+    font-size: 13px;
+}
+/*===================Discussion Board Page=====================*/
+.publisher-img img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.publisher-img {
+    display: inline-block;
+}
+
+.publish-info {
+    display: inline-block;
+    position: relative;
+    top: 8px;
+}
+
+span.publisher-name {
+    font-size: 13px;
+    color: #2c79bf;
+    font-weight: 500;
+}
+
+span.publish-date {
+    font-size: 13px;
+    color: #797979;
+    font-weight: 500;
+}
+
+.publisher-identity {
+    position: relative;
+}
+
+.discussion-description p {
+    font-size: 15px;
+    line-height: 21px;
+}
+
+.btn-icon {
+    border-radius: 18px;
+    padding: 0px 15px;
+    border: solid 1px #dadada;
+    font-size: 13px;
+    background: #fff;
+    margin-bottom: 10px;
+}
+
+    .btn-icon:hover {
+        color: #2c79bf !important;
+        background: #fff;
+    }
+
+.input-text-fix {
+    width: 225px;
+}
+
+.input-text-fix-160 {
+    width: 160px;
+}
+
+.input-text-fix-50 {
+    width: 50px;
+}
+/*===================Announcement=====================*/
+.label-header {
+    font-size: 17px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    color: #2c79bf;
+}
+
+.label-header-time {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    color: #777;
+}
+
+.label-anouncement {
+    font-size: 15px;
+}
+
+.th-width-announcement {
+    width: 120px;
+}
+
+.ui-datepicker-trigger {
+    position: absolute;
+    right: 30px;
+    top: 2px;
+    border: none;
+    padding: 5px;
+    font-size: 16px;
+    color: #585865;
+    background: none;
+    border-left: 1px solid #ddd;
+}
+
+.img-btn-margin {
+    margin: -14px 5px;
+    width: 36px;
+}
+/*===================Syllabus View page=====================*/
+.slyllabus-body {
+    box-shadow: 2px 2px 20px #c8ced4;
+    padding: 50px;
+    color: #2e2f35;
+}
+
+.syllabus-top-header h3 {
+    margin-bottom: 10px;
+    color: #2e2f35;
+    font-size: 26px;
+}
+
+.syllabus-top-header h4 {
+    font-size: 20px;
+    color: #2e2f35;
+    margin-bottom: 5px;
+}
+
+.slyllabus-body strong {
+    margin-bottom: 10px;
+    display: block;
+}
+
+ul.syllabus-list li {
+    margin-bottom: 5px;
+}
+
+ul.syllabus-list {
+    margin-bottom: 15px;
+}
+
+.margin-0 {
+    margin: 0 !important;
+}
+
+.margin-top-bottom-30 {
+    margin: 30px 0 !important;
+}
+.width-130 {
+width: 130px;
+}

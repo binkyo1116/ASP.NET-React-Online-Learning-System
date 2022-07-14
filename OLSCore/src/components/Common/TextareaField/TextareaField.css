@@ -1,0 +1,17 @@
+.inpfTextarea {
+}
+.inpfTextarea.error {
+	border: 3px solid #EB5757 !important;
+}
+.inpfTextareaErrorLabel {
+	color: #EB5757;
+	display: flex;
+	align-items: center;
+	padding-top: 0.5rem;
+	font-size: 0.875rem;
+}
+.inpfTextareaErrorLabel img {
+	width: 1.125rem;
+	height: 1.125rem;
+	margin-right: 0.5rem;
+}

@@ -1,0 +1,58 @@
+﻿<div class="quiz-set box-bg-white">
+    <!--------------------------------Loader spinner ------------------------------------------>
+    <!--<div id="x_disabled-div" class="disabled-div" style="display:none"></div>-->
+    <div>
+        <div style="position:relative;" class="margin-b-1">
+            <div class="row">
+                <div class="col-12 col-md-8">
+                    <div id="x_videoPanel" class="video-panel" style="display:none;">
+                        <div id="playVideo" class="material-play-btn" onclick="play(x_)">
+                            <a href="#">
+                                <img src="Content/images/play-btn-x.png" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="question-img-area" id="x_questionImage"></div>
+                    <div class="gradable-question-area">
+                        <span id="x_lblPrompt1"></span>
+                        <div id="elementArea" style="background-color:rgba(255, 0, 0, 0.25); border:2px solid red;display:none;position:absolute;" onclick="clickSubmit(x_)"></div>
+
+                        <div id="x_textbox" class="gradeable-textbox-area">
+                            <span class="gradable-hint arrow arrow-progress" id="x_lblHint" style="visibility: hidden;"></span>
+                            <div type="text" id="x_txtAnswer" class="form-control gradeable-textbox" onkeypress="rememberCharInput(x_, event);" onfocusout="hideHint(x_)" onkeydown="rememberNavKey(x_, event);" oninput="checkAnswerOnInput(x_)" contentEditable="true"></div>
+                            <select id="x_ddAnswer" style="display: none;" onchange="putChoice(x_);"></select>
+                            <!--<div class="gradeable-img-button"> </div>-->
+                        </div>
+                        <span id="x_lblPrompt2"></span>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="thumb-area" style="float: right">
+                        <input type="image" id="x_RateUp" class="thumbs-img-icon" src="../Content/images/ThumsUp.png" alt="Up" onclick="sendRating(1, x_)" >
+                        <input type="image" id="x_RateDown" class="thumbs-img-icon" src="../Content/images/ThumsDown.png" alt="Down" onclick="sendRating(-1, x_)" >
+                    </div>
+                </div>
+            </div>
+            <div class="gradable-checkbox-area" id="x_multipleChoice" style="display:none;"></div>
+        </div>
+    </div>
+    <!--<div class="gradable-padding"></div>-->
+    <div class="row">
+        <div class="col-12 col-md-6">
+            <div class="gradable-hint-area">
+                <span id="x_lblResult"></span>
+                <span id="x_lblHintTeacher" class="p-2"></span>
+            </div>
+            <div id="x_areaHint" class="thumb-area d-none" style="display: inline-block;float: right;position: absolute;bottom: 2.5rem;right: 17rem;">
+                <input type="image" id="x_HintRateUp" class="thumbs-img-icon" src="../Content/images/ThumsUp.png" alt="Up" onclick="sendRatingHint(1, x_)">
+                <input type="image" id="x_HintRateDown" class="thumbs-img-icon" src="../Content/images/ThumsDown.png" alt="Down" onclick="sendRatingHint(-1, x_)">
+            </div>
+        </div>
+        <div class="col-12 col-md-6">
+            <div class="gradeable-textbox-submit-btn-area">
+                <input style="display:inline-block" type="button" id="x_btnSubmit" class="btn btn-custom-round" alt="Submit" value="Submit" onclick="submitAnswer(x_); return false;">&nbsp;
+                <input style="display:inline-block" type="button" id="x_btnReveal" class="btn btn-custom-round-outline" alt="Reveal Answer" value="Reveal" onclick="revealClick(x_); return false;">
+            </div>
+        </div>
+    </div>
+</div>

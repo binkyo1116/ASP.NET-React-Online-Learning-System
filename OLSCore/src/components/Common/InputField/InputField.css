@@ -1,0 +1,56 @@
+.inpfInput {
+	box-sizing: border-box;
+	height: 3.5rem;
+	width: 100%;
+	background: transparent;
+	border: none;
+	padding-left: 15px;
+	font-size: 1.125rem;
+	letter-spacing: 0.5px;
+	line-height: 1.7rem;
+	text-align: start;
+	outline: none;
+	border-bottom: 3px solid #D0D0D0;
+}
+.inpfInput.error {
+	border-bottom: 3px solid #EB5757;
+}
+.inpfErrorLabel {
+	color: #EB5757;
+	display: flex;
+	align-items: center;
+	padding-top: 0.5rem;
+	font-size: 0.875rem;
+}
+.inpfErrorLabel img {
+	width: 1.125rem;
+	height: 1.125rem;
+	margin-right: 0.5rem;
+}
+.input-container {
+	position: relative;
+}
+.has-left-icon .left-icon {
+	position: absolute;
+	top: 1.125rem;
+	width: 1.125rem;
+	height: 1.125rem;
+}
+.has-left-icon .inpfInput {
+	padding-left: 2rem;
+}
+
+.has-right-icon .right-icon {
+	position: absolute;
+	top: 1.125rem;
+	right: 0.5rem;
+	width: 1.25rem;
+	height: 1.25rem;
+}
+.has-right-icon .inpfInput {
+	padding-right: 2rem;
+}
+
+.inpfInput:focus {
+	border-bottom: 3px solid #0092CE;
+}

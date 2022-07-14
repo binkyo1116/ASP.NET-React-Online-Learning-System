@@ -1,0 +1,30 @@
+﻿#table {
+    max-height: 100px;
+}
+
+.tableWrapper {
+    margin-top: 10px;
+    overflow: auto;
+    max-height: 250px;
+    border: 1px solid rgb(206,212,218);
+}
+
+.tableWrapper table {
+    border-collapse: separate;
+    border-spacing: 0;
+    
+}
+
+.tableWrapper thead th {
+    position: sticky;
+    background-color: rgb(44, 121, 191);
+    font-weight: 400;
+    color: white;
+    top: 0;
+    border-radius: 3px;
+}
+
+.tableWrapper td {
+    padding: 2px;
+}
+

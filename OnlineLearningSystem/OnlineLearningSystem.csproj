@@ -1,0 +1,642 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" />
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B91D6BAD-DB9D-4763-8B58-CDB60C02C4FD}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>OnlineLearningSystem</RootNamespace>
+    <AssemblyName>OnlineLearningSystem</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44303</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication>
+    </IISExpressAnonymousAuthentication>
+    <IISExpressWindowsAuthentication>
+    </IISExpressWindowsAuthentication>
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <TypeScriptToolsVersion>3.8</TypeScriptToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="AnnouncementControl.html" />
+    <Content Include="AnnouncementPage.html" />
+    <Content Include="Calendar.html" />
+    <Content Include="CalendarActivityElement.html" />
+    <Content Include="CodeErrorsandHints.html" />
+    <Content Include="Content\fontawesome-free-6.1.1-web\css\all.css" />
+    <Content Include="Content\fontawesome-free-6.1.1-web\css\all.min.css" />
+    <Content Include="Content\images\clock_icon.png" />
+    <Content Include="Content\images\clock_icon_red.png" />
+    <Content Include="Content\images\course.svg" />
+    <Content Include="Content\images\email-icon.svg" />
+    <Content Include="Content\images\email.svg" />
+    <Content Include="Content\images\hero-bg-elements_whitebg2.svg" />
+    <Content Include="Content\images\home-icon-active.svg" />
+    <Content Include="Content\images\home-icon.svg" />
+    <Content Include="Content\images\Loader-logo.gif" />
+    <Content Include="Content\images\Loder_Trancparent_bg_OLD.gif" />
+    <Content Include="Content\images\mail-Icon-round.svg" />
+    <Content Include="Content\images\message-icon.svg" />
+    <Content Include="Content\images\ModuleIcon01.png" />
+    <Content Include="Content\images\ModuleIcon02.png" />
+    <Content Include="Content\images\ModuleIcon03.png" />
+    <Content Include="Content\images\ModuleIcon04.png" />
+    <Content Include="Content\images\ModuleIcon_New_01.png" />
+    <Content Include="Content\images\ModuleIcon_New_02.png" />
+    <Content Include="Content\images\ModuleIcon_New_03.png" />
+    <Content Include="Content\images\ModuleIcon_New_04.png" />
+    <Content Include="Content\images\page-title-element.png" />
+    <Content Include="Content\images\play-btn-x.png" />
+    <Content Include="Content\images\question.svg" />
+    <Content Include="Content\images\school.svg" />
+    <Content Include="Content\images\search-icon.png" />
+    <Content Include="Content\images\user-contact.svg" />
+    <Content Include="Content\images\user-request-login.svg" />
+    <Content Include="Contact.html" />
+    <Content Include="Content\styles\course-objectives.css" />
+    <Content Include="Content\styles\landing-page.css" />
+    <Content Include="index.html" />
+    <Content Include="index-old.html" />
+    <Content Include="Content\styles\course-selection.css" />
+    <Content Include="Content\styles\general.css" />
+    <Content Include="Content\styles\update-profile.css" />
+    <Content Include="Experiment\Introduction.html" />
+    <Content Include="Experiment\Material.html" />
+    <Content Include="Experiment\Solution1.html" />
+    <Content Include="Experiment\Solution2.html" />
+    <Content Include="Experiment\Start.html" />
+    <Content Include="Experiment\Test.html" />
+    <Content Include="LoggedOut.html" />
+    <Content Include="Material.html" />
+    <Content Include="OurServices.html" />
+    <Content Include="PageScripts\CodeErrorsandHints.js" />
+    <Content Include="PageScripts\Contact.js" />
+    <Content Include="PageScripts\ReactHeader.js" />
+    <Content Include="PageScripts\ContactUs.js" />
+    <Content Include="Content\animate.css" />
+    <Content Include="Content\bootstrap-utilities.css" />
+    <Content Include="Content\bootstrap-utilities.min.css" />
+    <Content Include="Content\images\aboutus-icon-hover.png" />
+    <Content Include="Content\images\aboutus-icon.png" />
+    <Content Include="Content\images\bulb-icon.png" />
+    <Content Include="Content\images\card-default-img.jpg" />
+    <Content Include="Content\images\email-icon-hover.png" />
+    <Content Include="Content\images\email-icon.png" />
+    <Content Include="Content\images\eye-icon-blue.png" />
+    <Content Include="Content\images\facebook.svg" />
+    <Content Include="Content\images\Feedback_image.png" />
+    <Content Include="Content\images\hero-bg-elements.svg" />
+    <Content Include="Content\images\instagram.svg" />
+    <Content Include="Content\images\learn-icon-hover.png" />
+    <Content Include="Content\images\learn-icon.png" />
+    <Content Include="Content\images\lets-use-data-logo.svg" />
+    <Content Include="Content\images\Loder_Trancparent_bg.gif" />
+    <Content Include="Content\images\one-line-logo.png" />
+    <Content Include="Content\images\password.svg" />
+    <Content Include="Content\images\search.svg" />
+    <Content Include="Content\images\settings-icon-hover.png" />
+    <Content Include="Content\images\settings-icon.png" />
+    <Content Include="Content\images\slider02.jpg" />
+    <Content Include="Content\images\twitter.svg" />
+    <Content Include="Content\images\user-login.svg" />
+    <Content Include="Content\images\user.svg" />
+    <Content Include="Content\images\vision-icon-hover2.png" />
+    <Content Include="Content\images\vision-icon2.png" />
+    <Content Include="Content\magnific-popup.css" />
+    <Content Include="Content\new-landing-page-style.css" />
+    <Content Include="Content\new-landing-page-v2.css" />
+    <Content Include="Content\new-theme-style.css" />
+    <Content Include="Content\normalize.css" />
+    <Content Include="Content\owl.carousel.min.css" />
+    <Content Include="Content\responsive.css" />
+    <Content Include="Content\select2.css" />
+    <Content Include="CourseCard.html" />
+    <Content Include="AboutUs.html" />
+    <Content Include="ContactUs.html" />
+    <Content Include="OurMethod.html" />
+    <Content Include="OurVision.html" />
+    <Content Include="Learn.html" />
+    <Content Include="PageScripts\lib\ace.js" />
+    <Content Include="PageScripts\lib\ext-beautify.js" />
+    <Content Include="PageScripts\lib\ext-code_lens.js" />
+    <Content Include="PageScripts\lib\ext-elastic_tabstops_lite.js" />
+    <Content Include="PageScripts\lib\ext-emmet.js" />
+    <Content Include="PageScripts\lib\ext-error_marker.js" />
+    <Content Include="PageScripts\lib\ext-keybinding_menu.js" />
+    <Content Include="PageScripts\lib\ext-language_tools.js" />
+    <Content Include="PageScripts\lib\ext-linking.js" />
+    <Content Include="PageScripts\lib\ext-modelist.js" />
+    <Content Include="PageScripts\lib\ext-options.js" />
+    <Content Include="PageScripts\lib\ext-prompt.js" />
+    <Content Include="PageScripts\lib\ext-rtl.js" />
+    <Content Include="PageScripts\lib\ext-searchbox.js" />
+    <Content Include="PageScripts\lib\ext-settings_menu.js" />
+    <Content Include="PageScripts\lib\ext-spellcheck.js" />
+    <Content Include="PageScripts\lib\ext-split.js" />
+    <Content Include="PageScripts\lib\ext-static_highlight.js" />
+    <Content Include="PageScripts\lib\ext-statusbar.js" />
+    <Content Include="PageScripts\lib\ext-textarea.js" />
+    <Content Include="PageScripts\lib\ext-themelist.js" />
+    <Content Include="PageScripts\lib\ext-whitespace.js" />
+    <Content Include="PageScripts\lib\keybinding-emacs.js" />
+    <Content Include="PageScripts\lib\keybinding-sublime.js" />
+    <Content Include="PageScripts\lib\keybinding-vim.js" />
+    <Content Include="PageScripts\lib\keybinding-vscode.js" />
+    <Content Include="PageScripts\lib\mode-abap.js" />
+    <Content Include="PageScripts\lib\mode-abc.js" />
+    <Content Include="PageScripts\lib\mode-actionscript.js" />
+    <Content Include="PageScripts\lib\mode-ada.js" />
+    <Content Include="PageScripts\lib\mode-alda.js" />
+    <Content Include="PageScripts\lib\mode-apache_conf.js" />
+    <Content Include="PageScripts\lib\mode-apex.js" />
+    <Content Include="PageScripts\lib\mode-applescript.js" />
+    <Content Include="PageScripts\lib\mode-aql.js" />
+    <Content Include="PageScripts\lib\mode-asciidoc.js" />
+    <Content Include="PageScripts\lib\mode-asl.js" />
+    <Content Include="PageScripts\lib\mode-assembly_x86.js" />
+    <Content Include="PageScripts\lib\mode-autohotkey.js" />
+    <Content Include="PageScripts\lib\mode-batchfile.js" />
+    <Content Include="PageScripts\lib\mode-c9search.js" />
+    <Content Include="PageScripts\lib\mode-cirru.js" />
+    <Content Include="PageScripts\lib\mode-clojure.js" />
+    <Content Include="PageScripts\lib\mode-cobol.js" />
+    <Content Include="PageScripts\lib\mode-coffee.js" />
+    <Content Include="PageScripts\lib\mode-coldfusion.js" />
+    <Content Include="PageScripts\lib\mode-crystal.js" />
+    <Content Include="PageScripts\lib\mode-csharp.js" />
+    <Content Include="PageScripts\lib\mode-csound_document.js" />
+    <Content Include="PageScripts\lib\mode-csound_orchestra.js" />
+    <Content Include="PageScripts\lib\mode-csound_score.js" />
+    <Content Include="PageScripts\lib\mode-csp.js" />
+    <Content Include="PageScripts\lib\mode-css.js" />
+    <Content Include="PageScripts\lib\mode-curly.js" />
+    <Content Include="PageScripts\lib\mode-c_cpp.js" />
+    <Content Include="PageScripts\lib\mode-d.js" />
+    <Content Include="PageScripts\lib\mode-dart.js" />
+    <Content Include="PageScripts\lib\mode-diff.js" />
+    <Content Include="PageScripts\lib\mode-django.js" />
+    <Content Include="PageScripts\lib\mode-dockerfile.js" />
+    <Content Include="PageScripts\lib\mode-dot.js" />
+    <Content Include="PageScripts\lib\mode-drools.js" />
+    <Content Include="PageScripts\lib\mode-edifact.js" />
+    <Content Include="PageScripts\lib\mode-eiffel.js" />
+    <Content Include="PageScripts\lib\mode-ejs.js" />
+    <Content Include="PageScripts\lib\mode-elixir.js" />
+    <Content Include="PageScripts\lib\mode-elm.js" />
+    <Content Include="PageScripts\lib\mode-erlang.js" />
+    <Content Include="PageScripts\lib\mode-forth.js" />
+    <Content Include="PageScripts\lib\mode-fortran.js" />
+    <Content Include="PageScripts\lib\mode-fsharp.js" />
+    <Content Include="PageScripts\lib\mode-fsl.js" />
+    <Content Include="PageScripts\lib\mode-ftl.js" />
+    <Content Include="PageScripts\lib\mode-gcode.js" />
+    <Content Include="PageScripts\lib\mode-gherkin.js" />
+    <Content Include="PageScripts\lib\mode-gitignore.js" />
+    <Content Include="PageScripts\lib\mode-glsl.js" />
+    <Content Include="PageScripts\lib\mode-gobstones.js" />
+    <Content Include="PageScripts\lib\mode-golang.js" />
+    <Content Include="PageScripts\lib\mode-graphqlschema.js" />
+    <Content Include="PageScripts\lib\mode-groovy.js" />
+    <Content Include="PageScripts\lib\mode-haml.js" />
+    <Content Include="PageScripts\lib\mode-handlebars.js" />
+    <Content Include="PageScripts\lib\mode-haskell.js" />
+    <Content Include="PageScripts\lib\mode-haskell_cabal.js" />
+    <Content Include="PageScripts\lib\mode-haxe.js" />
+    <Content Include="PageScripts\lib\mode-hjson.js" />
+    <Content Include="PageScripts\lib\mode-html.js" />
+    <Content Include="PageScripts\lib\mode-html_elixir.js" />
+    <Content Include="PageScripts\lib\mode-html_ruby.js" />
+    <Content Include="PageScripts\lib\mode-ini.js" />
+    <Content Include="PageScripts\lib\mode-io.js" />
+    <Content Include="PageScripts\lib\mode-jack.js" />
+    <Content Include="PageScripts\lib\mode-jade.js" />
+    <Content Include="PageScripts\lib\mode-java.js" />
+    <Content Include="PageScripts\lib\mode-javascript.js" />
+    <Content Include="PageScripts\lib\mode-json.js" />
+    <Content Include="PageScripts\lib\mode-json5.js" />
+    <Content Include="PageScripts\lib\mode-jsoniq.js" />
+    <Content Include="PageScripts\lib\mode-jsp.js" />
+    <Content Include="PageScripts\lib\mode-jssm.js" />
+    <Content Include="PageScripts\lib\mode-jsx.js" />
+    <Content Include="PageScripts\lib\mode-julia.js" />
+    <Content Include="PageScripts\lib\mode-kotlin.js" />
+    <Content Include="PageScripts\lib\mode-latex.js" />
+    <Content Include="PageScripts\lib\mode-less.js" />
+    <Content Include="PageScripts\lib\mode-liquid.js" />
+    <Content Include="PageScripts\lib\mode-lisp.js" />
+    <Content Include="PageScripts\lib\mode-livescript.js" />
+    <Content Include="PageScripts\lib\mode-logiql.js" />
+    <Content Include="PageScripts\lib\mode-logtalk.js" />
+    <Content Include="PageScripts\lib\mode-lsl.js" />
+    <Content Include="PageScripts\lib\mode-lua.js" />
+    <Content Include="PageScripts\lib\mode-luapage.js" />
+    <Content Include="PageScripts\lib\mode-lucene.js" />
+    <Content Include="PageScripts\lib\mode-makefile.js" />
+    <Content Include="PageScripts\lib\mode-markdown.js" />
+    <Content Include="PageScripts\lib\mode-mask.js" />
+    <Content Include="PageScripts\lib\mode-matlab.js" />
+    <Content Include="PageScripts\lib\mode-maze.js" />
+    <Content Include="PageScripts\lib\mode-mediawiki.js" />
+    <Content Include="PageScripts\lib\mode-mel.js" />
+    <Content Include="PageScripts\lib\mode-mixal.js" />
+    <Content Include="PageScripts\lib\mode-mushcode.js" />
+    <Content Include="PageScripts\lib\mode-mysql.js" />
+    <Content Include="PageScripts\lib\mode-nginx.js" />
+    <Content Include="PageScripts\lib\mode-nim.js" />
+    <Content Include="PageScripts\lib\mode-nix.js" />
+    <Content Include="PageScripts\lib\mode-nsis.js" />
+    <Content Include="PageScripts\lib\mode-nunjucks.js" />
+    <Content Include="PageScripts\lib\mode-objectivec.js" />
+    <Content Include="PageScripts\lib\mode-ocaml.js" />
+    <Content Include="PageScripts\lib\mode-pascal.js" />
+    <Content Include="PageScripts\lib\mode-perl.js" />
+    <Content Include="PageScripts\lib\mode-perl6.js" />
+    <Content Include="PageScripts\lib\mode-pgsql.js" />
+    <Content Include="PageScripts\lib\mode-php.js" />
+    <Content Include="PageScripts\lib\mode-php_laravel_blade.js" />
+    <Content Include="PageScripts\lib\mode-pig.js" />
+    <Content Include="PageScripts\lib\mode-plain_text.js" />
+    <Content Include="PageScripts\lib\mode-powershell.js" />
+    <Content Include="PageScripts\lib\mode-praat.js" />
+    <Content Include="PageScripts\lib\mode-prisma.js" />
+    <Content Include="PageScripts\lib\mode-prolog.js" />
+    <Content Include="PageScripts\lib\mode-properties.js" />
+    <Content Include="PageScripts\lib\mode-protobuf.js" />
+    <Content Include="PageScripts\lib\mode-puppet.js" />
+    <Content Include="PageScripts\lib\mode-python.js" />
+    <Content Include="PageScripts\lib\mode-qml.js" />
+    <Content Include="PageScripts\lib\mode-r.js" />
+    <Content Include="PageScripts\lib\mode-razor.js" />
+    <Content Include="PageScripts\lib\mode-rdoc.js" />
+    <Content Include="PageScripts\lib\mode-red.js" />
+    <Content Include="PageScripts\lib\mode-redshift.js" />
+    <Content Include="PageScripts\lib\mode-rhtml.js" />
+    <Content Include="PageScripts\lib\mode-rst.js" />
+    <Content Include="PageScripts\lib\mode-ruby.js" />
+    <Content Include="PageScripts\lib\mode-rust.js" />
+    <Content Include="PageScripts\lib\mode-sass.js" />
+    <Content Include="PageScripts\lib\mode-scad.js" />
+    <Content Include="PageScripts\lib\mode-scala.js" />
+    <Content Include="PageScripts\lib\mode-scheme.js" />
+    <Content Include="PageScripts\lib\mode-scss.js" />
+    <Content Include="PageScripts\lib\mode-sh.js" />
+    <Content Include="PageScripts\lib\mode-sjs.js" />
+    <Content Include="PageScripts\lib\mode-slim.js" />
+    <Content Include="PageScripts\lib\mode-smarty.js" />
+    <Content Include="PageScripts\lib\mode-snippets.js" />
+    <Content Include="PageScripts\lib\mode-soy_template.js" />
+    <Content Include="PageScripts\lib\mode-space.js" />
+    <Content Include="PageScripts\lib\mode-sparql.js" />
+    <Content Include="PageScripts\lib\mode-sql.js" />
+    <Content Include="PageScripts\lib\mode-sqlserver.js" />
+    <Content Include="PageScripts\lib\mode-stylus.js" />
+    <Content Include="PageScripts\lib\mode-svg.js" />
+    <Content Include="PageScripts\lib\mode-swift.js" />
+    <Content Include="PageScripts\lib\mode-tcl.js" />
+    <Content Include="PageScripts\lib\mode-terraform.js" />
+    <Content Include="PageScripts\lib\mode-tex.js" />
+    <Content Include="PageScripts\lib\mode-text.js" />
+    <Content Include="PageScripts\lib\mode-textile.js" />
+    <Content Include="PageScripts\lib\mode-toml.js" />
+    <Content Include="PageScripts\lib\mode-tsx.js" />
+    <Content Include="PageScripts\lib\mode-turtle.js" />
+    <Content Include="PageScripts\lib\mode-twig.js" />
+    <Content Include="PageScripts\lib\mode-typescript.js" />
+    <Content Include="PageScripts\lib\mode-vala.js" />
+    <Content Include="PageScripts\lib\mode-vbscript.js" />
+    <Content Include="PageScripts\lib\mode-velocity.js" />
+    <Content Include="PageScripts\lib\mode-verilog.js" />
+    <Content Include="PageScripts\lib\mode-vhdl.js" />
+    <Content Include="PageScripts\lib\mode-visualforce.js" />
+    <Content Include="PageScripts\lib\mode-wollok.js" />
+    <Content Include="PageScripts\lib\mode-xml.js" />
+    <Content Include="PageScripts\lib\mode-xquery.js" />
+    <Content Include="PageScripts\lib\mode-yaml.js" />
+    <Content Include="PageScripts\lib\mode-zeek.js" />
+    <Content Include="PageScripts\lib\readme.txt" />
+    <Content Include="PageScripts\lib\theme-ambiance.js" />
+    <Content Include="PageScripts\lib\theme-chaos.js" />
+    <Content Include="PageScripts\lib\theme-chrome.js" />
+    <Content Include="PageScripts\lib\theme-clouds.js" />
+    <Content Include="PageScripts\lib\theme-clouds_midnight.js" />
+    <Content Include="PageScripts\lib\theme-cobalt.js" />
+    <Content Include="PageScripts\lib\theme-crimson_editor.js" />
+    <Content Include="PageScripts\lib\theme-dawn.js" />
+    <Content Include="PageScripts\lib\theme-dracula.js" />
+    <Content Include="PageScripts\lib\theme-dreamweaver.js" />
+    <Content Include="PageScripts\lib\theme-eclipse.js" />
+    <Content Include="PageScripts\lib\theme-github.js" />
+    <Content Include="PageScripts\lib\theme-gob.js" />
+    <Content Include="PageScripts\lib\theme-gruvbox.js" />
+    <Content Include="PageScripts\lib\theme-idle_fingers.js" />
+    <Content Include="PageScripts\lib\theme-iplastic.js" />
+    <Content Include="PageScripts\lib\theme-katzenmilch.js" />
+    <Content Include="PageScripts\lib\theme-kr_theme.js" />
+    <Content Include="PageScripts\lib\theme-kuroir.js" />
+    <Content Include="PageScripts\lib\theme-merbivore.js" />
+    <Content Include="PageScripts\lib\theme-merbivore_soft.js" />
+    <Content Include="PageScripts\lib\theme-monokai.js" />
+    <Content Include="PageScripts\lib\theme-mono_industrial.js" />
+    <Content Include="PageScripts\lib\theme-nord_dark.js" />
+    <Content Include="PageScripts\lib\theme-pastel_on_dark.js" />
+    <Content Include="PageScripts\lib\theme-solarized_dark.js" />
+    <Content Include="PageScripts\lib\theme-solarized_light.js" />
+    <Content Include="PageScripts\lib\theme-sqlserver.js" />
+    <Content Include="PageScripts\lib\theme-terminal.js" />
+    <Content Include="PageScripts\lib\theme-textmate.js" />
+    <Content Include="PageScripts\lib\theme-tomorrow.js" />
+    <Content Include="PageScripts\lib\theme-tomorrow_night.js" />
+    <Content Include="PageScripts\lib\theme-tomorrow_night_blue.js" />
+    <Content Include="PageScripts\lib\theme-tomorrow_night_bright.js" />
+    <Content Include="PageScripts\lib\theme-tomorrow_night_eighties.js" />
+    <Content Include="PageScripts\lib\theme-twilight.js" />
+    <Content Include="PageScripts\lib\theme-vibrant_ink.js" />
+    <Content Include="PageScripts\lib\theme-xcode.js" />
+    <Content Include="PageScripts\lib\worker-base.js" />
+    <Content Include="PageScripts\lib\worker-coffee.js" />
+    <Content Include="PageScripts\lib\worker-css.js" />
+    <Content Include="PageScripts\lib\worker-html.js" />
+    <Content Include="PageScripts\lib\worker-javascript.js" />
+    <Content Include="PageScripts\lib\worker-json.js" />
+    <Content Include="PageScripts\lib\worker-lua.js" />
+    <Content Include="PageScripts\lib\worker-php.js" />
+    <Content Include="PageScripts\lib\worker-xml.js" />
+    <Content Include="PageScripts\lib\worker-xquery.js" />
+    <Content Include="PageScripts\LoggedOut.js" />
+    <Content Include="PageScripts\Material.js" />
+    <Content Include="PageScripts\ReactCourseObjectives.js" />
+    <Content Include="PageScripts\ReactCourseSelection.js" />
+    <Content Include="PageScripts\UserInterface.js" />
+    <Content Include="RequestLogin.html" />
+    <Content Include="ForgetPassword.html" />
+    <Content Include="DemoPage.html" />
+    <Content Include="ErrorPage.html" />
+    <Content Include="PageScripts\TicketingSystem.js" />
+    <Content Include="Scripts\select2.min.js" />
+    <Content Include="StartHere\BreadCrumbs.JPG" />
+    <Content Include="StartHere\StartHere.html" />
+    <Content Include="StartHere\Steps.jpg" />
+    <Content Include="StartHere\Syllabus.jpg" />
+    <Content Include="styles.css" />
+    <Content Include="SupportTicketDetail.html" />
+    <Content Include="SupportTicket.html" />
+    <Content Include="FeedbackList.html" />
+    <Content Include="Interaction.html" />
+    <Content Include="ModuleObjectiveProgressElement.html" />
+    <Content Include="PageScripts\Calendar.js" />
+    <Content Include="PageScripts\Demo.js" />
+    <Content Include="PageScripts\ModulePageGraph.js" />
+    <Content Include="PageScripts\RequestLogin.js" />
+    <Content Include="PageScripts\SignUp.js" />
+    <Content Include="PollResponse.html" />
+    <Content Include="PollResponseControl.html" />
+    <Content Include="QuizPage.html" />
+    <Content Include="Scripts\bootstrap.bundle.js" />
+    <Content Include="Scripts\bootstrap.bundle.min.js" />
+    <Content Include="Scripts\bootstrap.esm.js" />
+    <Content Include="Scripts\bootstrap.esm.min.js" />
+    <Content Include="Scripts\index.js.flow" />
+    <Content Include="Scripts\jquery.magnific-popup.min.js" />
+    <Content Include="StudentSignUp.html" />
+    <Content Include="SupportTicketDetailControl.html" />
+    <Content Include="Syllabus.html" />
+    <Content Include="CourseObjectives.html" />
+    <Content Include="DiscussionBoardControl.html" />
+    <Content Include="DiscussionBoardPage.html" />
+    <Content Include="Feedback.html" />
+    <Content Include="Logout.html" />
+    <Content Include="MaterialPage.html" />
+    <Content Include="ModuleObjectiveProgress.html" />
+    <Content Include="ModulePage.html" />
+    <Content Include="ModuleProgress.html" />
+    <Content Include="PageScripts\Announcement.js" />
+    <Content Include="PageScripts\CourseObjectives.js" />
+    <Content Include="PageScripts\Syllabus.js" />
+    <Content Include="PageScripts\CourseSelection.js" />
+    <Content Include="PageScripts\DiscussionBoard.js" />
+    <Content Include="PageScripts\Feedback.js" />
+    <Content Include="PageScripts\ModulePage.js" />
+    <Content Include="PageScripts\ModuleProgress.js" />
+    <Content Include="PageScripts\PollResponse.js" />
+    <Content Include="PageScripts\Question.js" />
+    <Content Include="PageScripts\Global.js" />
+    <Content Include="PageScripts\Interaction.js" />
+    <Content Include="PageScripts\Quiz.js" />
+    <Content Include="PageScripts\Logout.js" />
+    <Content Include="PageScripts\Login.js" />
+    <Content Include="NewSntaxHighlighter.html" />
+    <Content Include="PageScripts\UpdateProfile.js" />
+    <Content Include="Scripts\owl.carousel.min.js" />
+    <Content Include="Scripts\wow.min.js" />
+    <Content Include="UpdateProfile.html" />
+    <Content Include="Content\images\begining-icon-blue.png" />
+    <Content Include="Content\images\check-icon.png" />
+    <Content Include="Content\images\element02.png" />
+    <Content Include="Content\images\eye-icon-dark-blue.png" />
+    <Content Include="Content\images\left-arrow-blue.png" />
+    <Content Include="Content\images\right-arrow-blue.png" />
+    <Content Include="Content\images\submit-icon.png" />
+    <Content Include="Content\images\submit-icon000.png" />
+    <Content Include="Content\bootstrap-grid.css" />
+    <Content Include="Content\bootstrap-grid.min.css" />
+    <Content Include="Content\bootstrap-reboot.css" />
+    <Content Include="Content\bootstrap-reboot.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\images\Logo.jpg" />
+    <Content Include="Content\images\Logo.png" />
+    <Content Include="Content\jquery-ui.css" />
+    <Content Include="Content\font-awesome.css" />
+    <Content Include="Content\font-awesome.min.css" />
+    <Content Include="Content\images\custome-pencil.png" />
+    <Content Include="Content\images\DownArrow.png" />
+    <Content Include="Content\images\photo.jpg" />
+    <Content Include="Content\images\RightArrow.png" />
+    <Content Include="Content\images\ThumsDown.png" />
+    <Content Include="Content\images\ThumsDown_select.png" />
+    <Content Include="Content\images\ThumsUp.png" />
+    <Content Include="Content\images\ThumsUp_select.png" />
+    <Content Include="favicon.png" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\d3_Js\d3_statistics.js" />
+    <Content Include="Content\bootstrap.min.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Content\bootstrap-reboot.min.css.map" />
+    <Content Include="Content\bootstrap-reboot.css.map" />
+    <Content Include="Content\bootstrap-grid.min.css.map" />
+    <Content Include="Content\bootstrap-grid.css.map" />
+    <Content Include="Content\fonts\consolas\CONSOLA.TTF" />
+    <Content Include="Content\fonts\SFProText\SFProText-Bold.ttf" />
+    <Content Include="Content\fonts\SFProText\SFProText-Medium.ttf" />
+    <Content Include="Content\fonts\SFProText\SFProText-Regular.ttf" />
+    <Content Include="Content\fonts\HelveticaNeue\HelveticaNeue.ttf" />
+    <Content Include="Content\fonts\Helvetica\Helvetica-Bold.ttf" />
+    <Content Include="Content\fonts\Helvetica\Helvetica.ttf" />
+    <Content Include="Content\fonts\Arial\ARIAL.TTF" />
+    <Content Include="Content\fonts\Arial\ARIALBD.TTF" />
+    <Content Include="Content\fonts\Arial\ARIALBI.TTF" />
+    <Content Include="Content\fonts\Arial\ARIALBLACKITALIC.TTF" />
+    <Content Include="Content\fonts\Arial\ARIALI.TTF" />
+    <Content Include="Content\fonts\Arial\ARIALLGT.TTF" />
+    <Content Include="Content\fonts\Arial\ARIALLGTITL.TTF" />
+    <Content Include="Content\fonts\Arial\ArialMdm.ttf" />
+    <Content Include="Content\fonts\Arial\ArialMdmItl.ttf" />
+    <Content Include="Content\fonts\Arial\ARIBLK.TTF" />
+    <Content Include="Content\fonts\Helvetica\helvetica-light.ttf" />
+    <Content Include="Content\fonts\HelveticaNeue\HelveticaNeuBold.ttf" />
+    <Content Include="Content\fonts\HelveticaNeue\HelveticaNeueLight.ttf" />
+    <Content Include="Content\fonts\HelveticaNeue\HelveticaNeueMedium.ttf" />
+    <Content Include="Content\fonts\HelveticaNeue\HelveticaNeueThin.ttf" />
+    <Content Include="Content\fonts\Montserrat\Montserrat-Bold.ttf" />
+    <Content Include="Content\fonts\Montserrat\Montserrat-Medium.ttf" />
+    <Content Include="Content\fonts\Montserrat\Montserrat-Regular.ttf" />
+    <Content Include="Content\fonts\Montserrat\Montserrat-SemiBold.ttf" />
+    <Content Include="Content\bootstrap-utilities.css.map" />
+    <Content Include="Content\bootstrap-utilities.min.css.map" />
+    <Content Include="libman.json" />
+    <Content Include="Content\fontawesome-free-6.1.1-web\webfonts\fa-brands-400.ttf" />
+    <Content Include="Content\fontawesome-free-6.1.1-web\webfonts\fa-brands-400.woff2" />
+    <Content Include="Content\fontawesome-free-6.1.1-web\webfonts\fa-regular-400.ttf" />
+    <Content Include="Content\fontawesome-free-6.1.1-web\webfonts\fa-regular-400.woff2" />
+    <Content Include="Content\fontawesome-free-6.1.1-web\webfonts\fa-solid-900.ttf" />
+    <Content Include="Content\fontawesome-free-6.1.1-web\webfonts\fa-solid-900.woff2" />
+    <Content Include="Content\fontawesome-free-6.1.1-web\webfonts\fa-v4compatibility.ttf" />
+    <Content Include="Content\fontawesome-free-6.1.1-web\webfonts\fa-v4compatibility.woff2" />
+    <Content Include=".devcontainer\devcontainer.json" />
+    <Content Include=".devcontainer\Dockerfile" />
+    <Content Include=".devcontainer\library-scripts\node-debian.sh" />
+    <None Include="Properties\PublishProfiles\OnlineLearningSystem - Web Deploy.pubxml" />
+    <Content Include="Scripts\bootstrap.esm.js.map" />
+    <Content Include="Scripts\bootstrap.esm.min.js.map" />
+    <Content Include="Scripts\bootstrap.bundle.js.map" />
+    <Content Include="Scripts\bootstrap.bundle.min.js.map" />
+    <None Include="Properties\PublishProfiles\OnlineLearningSystem - Web Deploy1.pubxml" />
+    <Content Include="readme.md" />
+    <None Include="Scripts\jquery-3.5.1.intellisense.js" />
+    <Content Include="Scripts\jquery-3.5.1.js" />
+    <Content Include="Scripts\jquery-3.5.1.min.js" />
+    <Content Include="Scripts\jquery-ui.min.js" />
+    <Content Include="fonts\fontawesome-webfont.svg" />
+    <Content Include="GradableTextBoxControl.html" />
+    <Content Include="Content\images\stock-photo-3.png" />
+    <Content Include="Content\custome-style.css" />
+    <Content Include="Content\fonts\Raleway\OFL.txt" />
+    <Content Include="Content\fonts\Roboto\LICENSE.txt" />
+    <Content Include="Content\images\bulet2.png" />
+    <Content Include="Content\images\bulet3.png" />
+    <Content Include="Content\images\content-image.png" />
+    <Content Include="Content\images\element2.png" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Content\style.css" />
+    <Content Include="CourseSelection.html" />
+    <Content Include="Content\fonts\Raleway\Raleway-Bold.ttf" />
+    <Content Include="Content\fonts\Raleway\Raleway-ExtraBold.ttf" />
+    <Content Include="Content\fonts\Raleway\Raleway-Medium.ttf" />
+    <Content Include="Content\fonts\Raleway\Raleway-Regular.ttf" />
+    <Content Include="Content\fonts\Raleway\Raleway-SemiBold.ttf" />
+    <Content Include="Content\fonts\Roboto\Roboto-Bold.ttf" />
+    <Content Include="Content\fonts\Roboto\Roboto-Medium.ttf" />
+    <Content Include="Content\fonts\Roboto\Roboto-Regular.ttf" />
+    <Content Include="CourseObjectiveProgress.html" />
+    <Content Include="Scripts\custome-design.js" />
+    <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Scripts\popper.js" />
+    <Content Include="Scripts\popper.min.js" />
+    <Content Include="Video.html" />
+    <Content Include="VideoPage.html" />
+    <Content Include="web.config" />
+    <None Include="web.Debug.config">
+      <DependentUpon>web.config</DependentUpon>
+    </None>
+    <None Include="web.Release.config">
+      <DependentUpon>web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Scripts\README.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+    <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="Scripts\index.d.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>54891</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44303/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="CopyRoslynFiles" AfterTargets="AfterBuild" Condition="!$(Disable_CopyWebApplication) And '$(OutDir)' != '$(OutputPath)'">
+    <ItemGroup>
+      <RoslynFiles Include="$(CscToolPath)\*" />
+    </ItemGroup>
+    <MakeDir Directories="$(WebProjectOutputDir)\bin\roslyn" />
+    <Copy SourceFiles="@(RoslynFiles)" DestinationFolder="$(WebProjectOutputDir)\bin\roslyn" SkipUnchangedFiles="true" Retries="$(CopyRetryCount)" RetryDelayMilliseconds="$(CopyRetryDelayMilliseconds)" />
+  </Target>
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

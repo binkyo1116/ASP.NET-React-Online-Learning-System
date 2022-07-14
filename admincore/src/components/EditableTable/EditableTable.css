@@ -1,0 +1,30 @@
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+.icon {
+    background-color: #0000;
+    border: none;
+    cursor: pointer;
+    float: right;
+    font-size: 1.8rem;
+}
+
+input.item-field {
+    border: none;
+    border-radius: 10px;
+    padding: 3px 10px;
+    box-shadow: -1px -1px 5px 1px #dddddd;
+}

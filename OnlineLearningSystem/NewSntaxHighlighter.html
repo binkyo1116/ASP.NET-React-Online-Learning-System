@@ -1,0 +1,114 @@
+﻿
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <style>
+        div {
+            width: 400px;
+            height: 250px;
+            font-size: 12px;
+            display: inline-block;
+            white-space: pre-wrap;
+            border: none;
+            padding: 10px;
+            font-family: Consolas, Monaco, monospace;
+        }
+
+        .code-blue {
+            color: #0000FF;
+            /* font-weight: bold;*/
+        }
+
+        .code-black {
+            color: #000;
+        }
+    </style>
+</head>
+<body dir="ltr">
+    <div id="editable" contenteditable="true"></div>
+
+    <script>
+
+
+        function getCaretPosition(el) {
+            var caretOffset = 0;
+            if (typeof window.getSelection !== "undefined") {
+                var range = window.getSelection().getRangeAt(0);
+                var selected = range.toString().length;
+                var preCaretRange = range.cloneRange();
+                preCaretRange.selectNodeContents(el);
+                preCaretRange.setEnd(range.endContainer, range.endOffset);
+                caretOffset = preCaretRange.toString().length - selected;
+            }
+            return caretOffset;
+        }
+
+        function getAllTextnodes(el) {
+            var n, a = [], walk = document.createTreeWalker(el, NodeFilter.SHOW_TEXT, null, false);
+            while (n = walk.nextNode()) a.push(n);
+            return a;
+        }
+
+
+        function getCaretData(el, position) {
+            var node; nodes = getAllTextnodes(el);
+            for (var n = 0; n < nodes.length; n++) {
+                if (position > nodes[n].nodeValue.length && nodes[n + 1]) {
+                    position -= nodes[n].nodeValue.length;
+                } else {
+                    node = nodes[n];
+                    break;
+                }
+            }
+            return { node: node, position: position };
+        }
+
+        function setCaretPosition(d) {
+            var sel = window.getSelection(),
+                range = document.createRange();
+            range.setStart(d.node, d.node.data.length);
+            range.collapse(true);
+            sel.removeAllRanges();
+            sel.addRange(range);
+        }
+
+        function isKeyWord(text) {
+            const keyWords = ['for', 'return', 'foreach', 'static', 'struct', 'this', 'while', 'switch', 'abstract',
+                'as', 'base', 'break', 'byte', 'case', 'catch', 'char', 'checked', 'class', 'const', 'continue', 'decimal',
+                'default', 'delegate', 'do', 'double', 'else', 'enum', 'event', 'explicit', 'extern', 'false', 'finally', 'fixed',
+                'float', 'goto', 'if', 'implicit', 'in', 'int', 'intrface', 'internal', 'is', 'lock', 'lock', 'long', 'namespace', 'new',
+                'null', 'object', 'operator', 'out', 'override', 'params', 'private', 'protected', 'public', 'readonly', 'ref', 'sbyte',
+                'sealed', 'short', 'sizeof', 'stackalloc', 'string', 'throw', 'true', 'try', 'typeof', 'unit', 'ulong', 'unchecked',
+                'unsafe', 'ushort', 'using', 'virtual', 'void', 'volatile'];
+
+            if (keyWords.indexOf(text) === -1) {
+                return false;
+            }
+            return true;
+        }
+
+
+
+
+        window.addEventListener("keyup", function () {
+            var ca = document.getElementById("editable");
+            var arr = ca.innerHTML.split(' ');
+            for (var i = 0; i < arr.length; i++) {
+                if (isKeyWord(arr[i])) {
+                    var currentCaretPosition = getCaretPosition(ca);
+                    var regex = new RegExp("([^A-z0-9])(" + arr[i] + ")([^A-z0-9])(?![^<]*>|[^<>]*</)", "g");
+                    ca.innerHTML = ca.innerHTML.replace(regex, "$1<span class='code-blue'>$2</span>$3");
+
+                    currentCaretPosition += arr[i].length;
+                    var dat = getCaretData(ca, currentCaretPosition);
+                    setCaretPosition(dat);
+                }
+
+            }
+
+        });
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="8d5c6c33107b4303b8e8e33c732c37a2" Name="Diagram1" ZoomLevel="64">
+        <EntityTypeShape EntityType="EFModel.Activity" Width="1.5" PointX="9.75" PointY="74.875" />
+        <EntityTypeShape EntityType="EFModel.ActivityMaterial" Width="1.5" PointX="15" PointY="90" />
+        <EntityTypeShape EntityType="EFModel.Announcement" Width="1.5" PointX="14.75" PointY="86.25" />
+        <EntityTypeShape EntityType="EFModel.CampusPublicSafety" Width="1.5" PointX="3" PointY="84.75" />
+        <EntityTypeShape EntityType="EFModel.CampusPublicSafetyPoint" Width="1.5" PointX="5.25" PointY="85" />
+        <EntityTypeShape EntityType="EFModel.CodeDepedency" Width="1.5" PointX="0.75" PointY="0.75" />
+        <EntityTypeShape EntityType="EFModel.CodingProblem" Width="1.5" PointX="12.75" PointY="68.625" />
+        <EntityTypeShape EntityType="EFModel.CodingProblemHint" Width="1.5" PointX="15" PointY="71.5" />
+        <EntityTypeShape EntityType="EFModel.CommunityStandard" Width="1.5" PointX="3" PointY="72.875" />
+        <EntityTypeShape EntityType="EFModel.ContactInformation" Width="1.5" PointX="10.5" PointY="49.75" />
+        <EntityTypeShape EntityType="EFModel.Course" Width="1.5" PointX="3" PointY="63.625" />
+        <EntityTypeShape EntityType="EFModel.CourseCourseMaterialRequirement" Width="1.5" PointX="5.25" PointY="65.25" />
+        <EntityTypeShape EntityType="EFModel.CourseInstance" Width="1.5" PointX="5.25" PointY="59.125" />
+        <EntityTypeShape EntityType="EFModel.CourseInstanceActivity" Width="1.5" PointX="12" PointY="74.875" />
+        <EntityTypeShape EntityType="EFModel.CourseInstanceCodingProblem" Width="1.5" PointX="15" PointY="78.875" />
+        <EntityTypeShape EntityType="EFModel.CourseInstanceDiscussionBoard" Width="1.5" PointX="12" PointY="78.875" />
+        <EntityTypeShape EntityType="EFModel.CourseInstanceMaterial" Width="1.5" PointX="12" PointY="83" />
+        <EntityTypeShape EntityType="EFModel.CourseInstancePollGroup" Width="1.5" PointX="15" PointY="82.875" />
+        <EntityTypeShape EntityType="EFModel.CourseInstanceSession" Width="1.5" PointX="10.5" PointY="57.875" />
+        <EntityTypeShape EntityType="EFModel.CourseMaterialRequirement" Width="1.5" PointX="3" PointY="51.5" />
+        <EntityTypeShape EntityType="EFModel.CourseObjective" Width="1.5" PointX="5.25" PointY="98.625" />
+        <EntityTypeShape EntityType="EFModel.CoursePolicy" Width="1.5" PointX="3" PointY="81.75" />
+        <EntityTypeShape EntityType="EFModel.CoursePolicyPoint" Width="1.5" PointX="5.25" PointY="81.875" />
+        <EntityTypeShape EntityType="EFModel.CoursePrerequisite" Width="1.5" PointX="5.25" PointY="88" />
+        <EntityTypeShape EntityType="EFModel.CourseRequiredTool" Width="1.5" PointX="5.25" PointY="68.25" />
+        <EntityTypeShape EntityType="EFModel.CourseSupply" Width="1.5" PointX="8.25" PointY="62.25" />
+        <EntityTypeShape EntityType="EFModel.CourseTechnologyRequirement" Width="1.5" PointX="8.25" PointY="68.25" />
+        <EntityTypeShape EntityType="EFModel.CourseTextbook" Width="1.5" PointX="8.25" PointY="65.25" />
+        <EntityTypeShape EntityType="EFModel.DiscussionBoard" Width="1.5" PointX="9.75" PointY="92.25" />
+        <EntityTypeShape EntityType="EFModel.GradeScale" Width="1.5" PointX="3" PointY="45.25" />
+        <EntityTypeShape EntityType="EFModel.GradeScaleGroup" Width="1.5" PointX="0.75" PointY="62.5" />
+        <EntityTypeShape EntityType="EFModel.GradeWeight" Width="1.5" PointX="7.5" PointY="57.25" />
+        <EntityTypeShape EntityType="EFModel.GradingPolicy" Width="1.5" PointX="3" PointY="70.25" />
+        <EntityTypeShape EntityType="EFModel.GroupDiscussion" Width="1.5" PointX="9.75" PointY="78.5" />
+        <EntityTypeShape EntityType="EFModel.InstructionMethod" Width="1.5" PointX="7.5" PointY="88.75" />
+        <EntityTypeShape EntityType="EFModel.Instructor" Width="1.5" PointX="8.25" PointY="49.875" />
+        <EntityTypeShape EntityType="EFModel.InstructorCourse" Width="1.5" PointX="10.5" PointY="60.75" />
+        <EntityTypeShape EntityType="EFModel.Language" Width="1.5" PointX="2.75" PointY="0.75" />
+        <EntityTypeShape EntityType="EFModel.Material" Width="1.5" PointX="9.75" PointY="95.125" />
+        <EntityTypeShape EntityType="EFModel.Module" Width="1.5" PointX="7.5" PointY="98.625" />
+        <EntityTypeShape EntityType="EFModel.ModuleObjective" Width="1.5" PointX="9.75" PointY="98.125" />
+        <EntityTypeShape EntityType="EFModel.Netiquette" Width="1.5" PointX="3" PointY="77.125" />
+        <EntityTypeShape EntityType="EFModel.NetiquetteLink" Width="1.5" PointX="5.25" PointY="78.625" />
+        <EntityTypeShape EntityType="EFModel.NetiquettePoint" Width="1.5" PointX="5.25" PointY="75.875" />
+        <EntityTypeShape EntityType="EFModel.PollGroup" Width="1.5" PointX="12.75" PointY="92.125" />
+        <EntityTypeShape EntityType="EFModel.PollGroupPollQuestion" Width="1.5" PointX="15" PointY="104.625" />
+        <EntityTypeShape EntityType="EFModel.PollParticipantAnswer" Width="1.5" PointX="12" PointY="86.875" />
+        <EntityTypeShape EntityType="EFModel.PollQuestion" Width="1.5" PointX="9.75" PointY="116.25" />
+        <EntityTypeShape EntityType="EFModel.PollQuestionOption" Width="1.5" PointX="12" PointY="119.375" />
+        <EntityTypeShape EntityType="EFModel.PollQuestionType" Width="1.5" PointX="7.5" PointY="116.75" />
+        <EntityTypeShape EntityType="EFModel.Quarter" Width="1.5" PointX="3" PointY="54.625" />
+        <EntityTypeShape EntityType="EFModel.QuizAnswer" Width="1.5" PointX="4.75" PointY="0.75" />
+        <EntityTypeShape EntityType="EFModel.QuizHint" Width="1.5" PointX="12.75" PointY="128.125" />
+        <EntityTypeShape EntityType="EFModel.QuizQuestion" Width="1.5" PointX="10.5" PointY="127.625" />
+        <EntityTypeShape EntityType="EFModel.QuizQuestionAnswer" Width="1.5" PointX="4.75" PointY="3.75" />
+        <EntityTypeShape EntityType="EFModel.QuizQuestionChoice" Width="1.5" PointX="0.75" PointY="5.75" />
+        <EntityTypeShape EntityType="EFModel.QuizQuestionElementStyle" Width="1.5" PointX="8.25" PointY="129.25" />
+        <EntityTypeShape EntityType="EFModel.QuizQuestionImage" Width="1.5" PointX="12.75" PointY="131.25" />
+        <EntityTypeShape EntityType="EFModel.QuizQuestionRating" Width="1.5" PointX="12.75" PointY="107.75" />
+        <EntityTypeShape EntityType="EFModel.RequestLogin" Width="1.5" PointX="6.75" PointY="0.75" />
+        <EntityTypeShape EntityType="EFModel.RequiredTool" Width="1.5" PointX="3" PointY="48.5" />
+        <EntityTypeShape EntityType="EFModel.Resource" Width="1.5" PointX="2.75" PointY="6.75" />
+        <EntityTypeShape EntityType="EFModel.ResourceSchool" Width="1.5" PointX="3" PointY="87.875" />
+        <EntityTypeShape EntityType="EFModel.School" Width="1.5" PointX="0.75" PointY="65.625" />
+        <EntityTypeShape EntityType="EFModel.Session" Width="1.5" PointX="8.25" PointY="53.625" />
+        <EntityTypeShape EntityType="EFModel.Student" Width="1.5" PointX="7.5" PointY="107" />
+        <EntityTypeShape EntityType="EFModel.StudentCourseAccess" Width="1.5" PointX="9.75" PointY="88.5" />
+        <EntityTypeShape EntityType="EFModel.StudentGradable" Width="1.5" PointX="9.75" PointY="104.375" />
+        <EntityTypeShape EntityType="EFModel.StudentLogin" Width="1.5" PointX="6.75" PointY="3.75" />
+        <EntityTypeShape EntityType="EFModel.StudentMaterial" Width="1.5" PointX="9.75" PointY="123.875" />
+        <EntityTypeShape EntityType="EFModel.StudentQuizQuestion" Width="1.5" PointX="9.75" PointY="108" />
+        <EntityTypeShape EntityType="EFModel.Submission" Width="1.5" PointX="9.75" PointY="112" />
+        <EntityTypeShape EntityType="EFModel.Supply" Width="1.5" PointX="6" PointY="54.5" />
+        <EntityTypeShape EntityType="EFModel.SupportService" Width="1.5" PointX="3" PointY="57.875" />
+        <EntityTypeShape EntityType="EFModel.SupportTicket" Width="1.5" PointX="9.75" PointY="84.125" />
+        <EntityTypeShape EntityType="EFModel.SupportTicketMessage" Width="1.5" PointX="12" PointY="96.75" />
+        <EntityTypeShape EntityType="EFModel.TechnologyRequirement" Width="1.5" PointX="6" PointY="51.5" />
+        <EntityTypeShape EntityType="EFModel.Textbook" Width="1.5" PointX="6" PointY="71.5" />
+        <EntityTypeShape EntityType="EFModel.UnhandledError" Width="1.5" PointX="4.75" PointY="6.75" />
+        <EntityTypeShape EntityType="EFModel.ActivityGrade" Width="1.5" PointX="6.75" PointY="6.75" />
+        <AssociationConnector Association="EFModel.FK_ActivityMaterial_Activity" />
+        <AssociationConnector Association="EFModel.FK_CourseInstanceActivity_Activity" />
+        <AssociationConnector Association="EFModel.FK_QuizQuestion_Activity" />
+        <AssociationConnector Association="EFModel.FK_ActivityMaterial_Material" />
+        <AssociationConnector Association="EFModel.FK_Announcement_CourseInstance" />
+        <AssociationConnector Association="EFModel.FK_Announcement_Student" />
+        <AssociationConnector Association="EFModel.FK_CampusPublicSafety_School" />
+        <AssociationConnector Association="EFModel.FK_CampusPublicSafetyPoint_CampusPublicSafety" />
+        <AssociationConnector Association="EFModel.FK_CodingProblemHint_CodingProblem" />
+        <AssociationConnector Association="EFModel.FK_CourseInstanceCodingProblem_CodingProblem" />
+        <AssociationConnector Association="EFModel.FK_StudentGradable_CodingProblem" />
+        <AssociationConnector Association="EFModel.FK_Submission_CodingProblem" />
+        <AssociationConnector Association="EFModel.FK_CommunityStandard_School" />
+        <AssociationConnector Association="EFModel.FK_ContactInformation_Instructor" />
+        <AssociationConnector Association="EFModel.FK_Course_GradeScaleGroup" />
+        <AssociationConnector Association="EFModel.FK_Course_School" />
+        <AssociationConnector Association="EFModel.FK_CourseInstance_Course1" />
+        <AssociationConnector Association="EFModel.FK_CourseMaterialRequirementMapping_Course" />
+        <AssociationConnector Association="EFModel.FK_CoursePrerequisite_Course" />
+        <AssociationConnector Association="EFModel.FK_CoursePrerequisite_Course1" />
+        <AssociationConnector Association="EFModel.FK_CourseRequiredTool_Course" />
+        <AssociationConnector Association="EFModel.FK_CourseSupplies_Course" />
+        <AssociationConnector Association="EFModel.FK_CourseTechnologyRequirement_Course" />
+        <AssociationConnector Association="EFModel.FK_CourseTextbook_Course" />
+        <AssociationConnector Association="EFModel.FK_CourseMaterialRequirementMapping_CourseMaterialRequirement" />
+        <AssociationConnector Association="EFModel.FK__PollParti__Cours__6DD739FB" />
+        <AssociationConnector Association="EFModel.FK__SupportTi__Cours__729BEF18" />
+        <AssociationConnector Association="EFModel.FK_CourseInstance_Quarter" />
+        <AssociationConnector Association="EFModel.FK_CourseInstanceActivity_CourseInstance" />
+        <AssociationConnector Association="EFModel.FK_CourseInstanceCodingProblem_CourseInstance" />
+        <AssociationConnector Association="EFModel.FK_CourseInstanceDiscussionBoard_CourseInstance" />
+        <AssociationConnector Association="EFModel.FK_CourseInstanceMaterial_CourseInstance" />
+        <AssociationConnector Association="EFModel.FK_CourseInstancePollGroup_CourseInstance" />
+        <AssociationConnector Association="EFModel.FK_CourseInstanceSessionMapping_CourseInstance" />
+        <AssociationConnector Association="EFModel.FK_GradeWeight_CourseInstance" />
+        <AssociationConnector Association="EFModel.FK_GroupDiscussion_CourseInstance" />
+        <AssociationConnector Association="EFModel.FK_InstructionMethod_CourseInstance" />
+        <AssociationConnector Association="EFModel.FK_InstructorCourse_CourseInstance" />
+        <AssociationConnector Association="EFModel.FK_StudentCourseAccess_CourseInstance" />
+        <AssociationConnector Association="EFModel.FK_CourseInstanceActivity_ModuleObjective" />
+        <AssociationConnector Association="EFModel.FK_CourseInstanceCodingProblem_ModuleObjective" />
+        <AssociationConnector Association="EFModel.FK_CourseInstanceDiscussionBoard_DiscussionBoard" />
+        <AssociationConnector Association="EFModel.FK_CourseInstanceDiscussionBoard_ModuleObjective" />
+        <AssociationConnector Association="EFModel.FK_CourseInstanceMaterial_Material" />
+        <AssociationConnector Association="EFModel.FK_CourseInstanceMaterial_ModuleObjective" />
+        <AssociationConnector Association="EFModel.FK_CourseInstancePollGroup_ModuleObjective" />
+        <AssociationConnector Association="EFModel.FK_CourseInstancePollGroup_PollGroup" />
+        <AssociationConnector Association="EFModel.FK_CourseInstanceSessionMapping_Session" />
+        <AssociationConnector Association="EFModel.FK_CoursePolicy_School" />
+        <AssociationConnector Association="EFModel.FK_CoursePolicyPoint_CoursePolicy" />
+        <AssociationConnector Association="EFModel.FK_CourseRequiredTool_RequiredTool" />
+        <AssociationConnector Association="EFModel.FK_CourseSupplie_Supplie" />
+        <AssociationConnector Association="EFModel.FK_CourseTechnologyRequirement_TechnologyRequirement1" />
+        <AssociationConnector Association="EFModel.FK_CourseTextbook_Textbook" />
+        <AssociationConnector Association="EFModel.FK_GroupDiscussion_DiscussionBoard" />
+        <AssociationConnector Association="EFModel.FK__GradeScal__Grade__1229A90A" />
+        <AssociationConnector Association="EFModel.FK_GradingPolicy_School" />
+        <AssociationConnector Association="EFModel.FK_GroupDiscussion_Student" />
+        <AssociationConnector Association="EFModel.FK__PollQuest__Enlis__22951AFD" />
+        <AssociationConnector Association="EFModel.FK_InstructorCourse_Instructor" />
+        <AssociationConnector Association="EFModel.FK__PollParti__Modul__6CE315C2" />
+        <AssociationConnector Association="EFModel.FK_Netiquette_School" />
+        <AssociationConnector Association="EFModel.FK_NetiquetteLink_Netiquette" />
+        <AssociationConnector Association="EFModel.FK_NetiquettePoint_Netiquette" />
+        <AssociationConnector Association="EFModel.FK__PollParti__PollG__39788055" />
+        <AssociationConnector Association="EFModel.FK_PollGroupPollQuestion_PollGroup" />
+        <AssociationConnector Association="EFModel.FK_PollGroupPollQuestion_PollQuestion" />
+        <AssociationConnector Association="EFModel.FK__PollParti__PollQ__3A6CA48E" />
+        <AssociationConnector Association="EFModel.FK__PollParti__Stude__3B60C8C7" />
+        <AssociationConnector Association="EFModel.FK__PollQuest__PollQ__18178C8A" />
+        <AssociationConnector Association="EFModel.FK__PollQuest__PollT__19FFD4FC" />
+        <AssociationConnector Association="EFModel.FK_Quarter_School" />
+        <AssociationConnector Association="EFModel.FK_QuizHint_QuizQuestion" />
+        <AssociationConnector Association="EFModel.FK_QuizQuestion_QuizQuestionElementStyle" />
+        <AssociationConnector Association="EFModel.FK_QuizQuestionImage_QuizQuestion" />
+        <AssociationConnector Association="EFModel.FK_QuizQuestionRating_QuizQuestion" />
+        <AssociationConnector Association="EFModel.FK_StudentQuizQuestion_QuizQuestion" />
+        <AssociationConnector Association="EFModel.FK_QuizQuestionRating_Student" />
+        <AssociationConnector Association="EFModel.FK_ResourceSchool_Resource" />
+        <AssociationConnector Association="EFModel.FK_SupportServices_School" />
+        <AssociationConnector Association="EFModel.FK__SupportTi__Stude__70B3A6A6" />
+        <AssociationConnector Association="EFModel.FK__SupportTi__Stude__7D197D8B" />
+        <AssociationConnector Association="EFModel.FK_StudentCourseAccess_Student1" />
+        <AssociationConnector Association="EFModel.FK_StudentGradable_Student" />
+        <AssociationConnector Association="EFModel.FK_StudentMaterial_Student" />
+        <AssociationConnector Association="EFModel.FK_StudentQuizQuestion_Student1" />
+        <AssociationConnector Association="EFModel.FK_Submission_Student" />
+        <AssociationConnector Association="EFModel.FK__SupportTi__Suppo__7C255952" />
+        <AssociationConnector Association="EFModel.CourseCourseObjective" />
+        <AssociationConnector Association="EFModel.CourseInstanceStudent" />
+        <AssociationConnector Association="EFModel.CourseObjectiveModule" />
+        <AssociationConnector Association="EFModel.ModuleModuleObjective" />
+        <EntityTypeShape EntityType="EFModel.Feedback" Width="1.5" PointX="17.75" PointY="84.375" />
+        <AssociationConnector Association="EFModel.FK_Feedback_CourseInstance" />
+        <AssociationConnector Association="EFModel.FK_Feebdack_Student" />
+        <EntityTypeShape EntityType="EFModel.CodeError" Width="1.5" PointX="14.75" PointY="53.375" />
+        <EntityTypeShape EntityType="EFModel.CodeHint" Width="1.5" PointX="14.75" PointY="50.5" />
+        <EntityTypeShape EntityType="EFModel.StudentCourseInstanceCompletion" Width="1.5" PointX="18.125" PointY="81.625" />
+        <EntityTypeShape EntityType="EFModel.Test" Width="1.5" PointX="15.25" PointY="68.125" />
+        <AssociationConnector Association="EFModel.FK_Test_CodingProblem" />
+        <AssociationConnector Association="EFModel.FK_StudentCourseInstanceCompletion_CourseInstance" />
+        <AssociationConnector Association="EFModel.FK_StudentCourseInstanceCompletion_Student" />
+        <EntityTypeShape EntityType="EFModel.SubmissionCodeError" Width="1.5" PointX="13" PointY="56.125" />
+        <AssociationConnector Association="EFModel.FK_Submission_CodeError_Join_CodeError1" />
+        <AssociationConnector Association="EFModel.FK_Submission_CodeError_Join_Submission1" />
+        <EntityTypeShape EntityType="EFModel.ErrorParsing" Width="1.5" PointX="5" PointY="9.75" />
+        <AssociationConnector Association="EFModel.FK_ErrorParsing_Language" />
+        <EntityTypeShape EntityType="EFModel.SanitizedCodeError" Width="1.5" PointX="19" PointY="54.25" />
+        <AssociationConnector Association="EFModel.FK_SanitizedCodeError_CodeError" />
+        <EntityTypeShape EntityType="EFModel.SanitizedCodeErrorCodeHint" Width="1.5" PointX="21.25" PointY="52.25" />
+        <AssociationConnector Association="EFModel.FK_SanitizedCodeErrorCodeHint_CodeHint" />
+        <AssociationConnector Association="EFModel.FK_SanitizedCodeErrorCodeHint_SanitizedCodeError" />
+        <EntityTypeShape EntityType="EFModel.CodingProblemInstance" Width="1.5" PointX="18" PointY="89.375" />
+        <EntityTypeShape EntityType="EFModel.VariableValue" Width="1.5" PointX="15.75" PointY="93.625" />
+        <AssociationConnector Association="EFModel.FK_CodingProblem" />
+        <AssociationConnector Association="EFModel.FK_CodingProblemId" />
+        <AssociationConnector Association="EFModel.FK_ID_VariableValue_in_CPI" />
+        <AssociationConnector Association="EFModel.FK_StudentId" />
+        <EntityTypeShape EntityType="EFModel.InstructorAvailableHour" Width="1.5" PointX="10.5" PointY="54.125" />
+        <EntityTypeShape EntityType="EFModel.NonAcademicDay" Width="1.5" PointX="5.25" PointY="47.875" />
+        <EntityTypeShape EntityType="EFModel.TestTemplate" Width="1.5" PointX="9.375" PointY="5.75" />
+        <EntityTypeShape EntityType="EFModel.VideoMaterial" Width="1.5" PointX="9.375" PointY="2.125" />
+        <EntityTypeShape EntityType="EFModel.VideoMaterialStep" Width="1.5" PointX="11.625" PointY="1" />
+        <AssociationConnector Association="EFModel.FK_InstructorAvailableHours_CourseInstance" />
+        <AssociationConnector Association="EFModel.FK_InstructorAvailableHours_Instructor" />
+        <AssociationConnector Association="EFModel.FK_NonAcademicDays_Quarter" />
+        <AssociationConnector Association="EFModel.FK_VideoMaterialStep1_VideoMaterial" />
+        <EntityTypeShape EntityType="EFModel.CourseCorequisite" Width="1.5" PointX="5.25" PointY="44.125" />
+        <AssociationConnector Association="EFModel.FK_CourseCorequisite_Course" />
+        <AssociationConnector Association="EFModel.FK_CourseCorequisite_CourseCoRequisite" />
+        <EntityTypeShape EntityType="EFModel.StudentSupportResource" Width="1.5" PointX="3" PointY="90.5" />
+        <AssociationConnector Association="EFModel.FK_StudentSupportResources_Course" />
+        <EntityTypeShape EntityType="EFModel.CourseInstructionMethod" Width="1.5" PointX="10.5" PointY="64" />
+        <EntityTypeShape EntityType="EFModel.MethodsOfInstruction" Width="1.5" PointX="8.25" PointY="71.25" />
+        <AssociationConnector Association="EFModel.FK_CourseInstructionMethod_CourseInstance" />
+        <AssociationConnector Association="EFModel.FK_CourseInstructionMethod_MethodsOfInstruction" />
+        </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

@@ -1,0 +1,45 @@
+﻿/*
+New style for Let's Use Data
+June 29, 2022
+*/
+
+
+/*
+Page: Update Profile
+*/
+
+.box.updateprofile {
+    padding: 3.375rem;
+    flex-shrink: 1;
+}
+
+.boxtitle-updateprofile {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+.profile-image {
+    width: 11.25rem;
+    height: 11.25rem;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 2px solid #D9D9D9;
+}
+
+.profile-changephotobtn {
+    background-color: #126EE2;
+    color: white;
+    width: 2.25rem;
+    height: 2.25rem;
+    position: absolute;
+    border-radius: 50%;
+    left: 7.75rem;
+    bottom: 0.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 1.19rem;
+    box-shadow: 0 0.125rem 0.625rem rgba(18, 110, 226, 0.4);
+}

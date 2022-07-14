@@ -1,0 +1,134 @@
+.login-section {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+}
+.login-section .login-container {
+    position: relative;
+    background: rgba(0, 29, 41, 0.92);
+    max-width: 1165px;
+    width: 100%;
+    border-radius: 20px;
+    margin: 0 auto;
+    padding: 4rem;
+}
+.login-section .login-container .over-section {
+    position: absolute;
+    right: 80px;
+    top: -42px;
+    width: 575px;
+}
+.login-section .login-container .wide-section {
+    width: calc(100% - 700px);
+    max-width: 374px;
+}
+.login-section .login-container .wide-section .contact-us {
+    border-bottom: 2px solid #55B6DE;
+}
+.login-section .login-container .wide-section .logo-image {
+    width: 240px;
+    margin-bottom: 82px;
+}
+.login-section .login-container .wide-section .wide-btn-group {
+    display: flex;
+    align-items: center;
+}
+
+.keep-logged-in{
+    display: flex;
+    align-items: center;
+    padding-left: 1.25rem;
+}
+.keep-logged-in input{
+    width: 1.25rem;
+    height: 1.25rem;
+    background: #CFCFCF;
+    border: none;
+    opacity: 0.5;
+    border-radius: 5px;
+}
+.keep-logged-in label {
+    font-size: 0.875rem;
+    padding-top: 0.25rem;
+}
+/*--------------------- Media query 1200 -------------------*/
+
+@media screen and (max-width: 1200px) {
+    .login-section .login-container {
+        max-width: calc(100% - 40px);
+    }
+    .login-section .login-container .wide-section {
+        width: calc(100% - 500px);
+    }
+    .login-section .login-container .over-section {
+        position: absolute;
+        right: 80px;
+        top: -2rem;
+        max-width: 450px;
+    }
+}
+
+/*--------------------- Media query 992 -------------------*/
+
+@media screen and (max-width: 992px) {
+    .login-section {
+        display: block;
+        flex-direction: column;
+        justify-content: end;
+        padding-top: 30rem;
+    }
+    
+    .login-section .login-container {
+        border-radius: 0;
+        max-width: 100% ;
+        height: calc(100vh - 30rem);
+    }
+    .login-section .login-container .wide-section {
+        text-align: center;
+        padding-top: 12rem !important;
+        width: 100%;
+        max-width: 20rem;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .login-section .login-container .wide-section .logo-image {
+        width: 15rem;
+        margin-bottom: 2rem;
+    }
+
+    .login-section .login-container .over-section {
+        position: absolute;
+        right: 50%;
+        transform:translate(50%, -60%);
+        max-width: 575px;
+    }
+    .login-section .login-container .wide-section .wide-btn-group {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+}
+/*--------------------- Media query 680 -------------------*/
+
+@media screen and (max-width: 680px) {
+    .login-section .login-container .over-section {
+        max-width: calc(100% - 4rem);
+    }
+
+}
+
+/*--------------------- Media query 576 -------------------*/
+
+@media screen and (max-width: 576px) {
+  body {
+    font-size: 10px;
+    line-height: 15px;
+  }
+  .bg-hero {
+    position: relative;
+  }
+}

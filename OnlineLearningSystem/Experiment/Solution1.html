@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html style="height:80%;weight:100%">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <!-------------- bootstrap css -------------->
+    <link href="../Content/bootstrap.min.css" rel="stylesheet" />
+    <!-------------- font awesome css -------------->
+    <link href="../Content/font-awesome.min.css" rel="stylesheet" />
+    <!-------------- style css -------------->
+    <link href="../Content/style.css" rel="stylesheet" />
+    <!-------------- new landing page css -------------->
+    <link href="../Content/new-landing-page-v2.css" rel="stylesheet" />
+    <!-------------- animate css -------------->
+    <link href="../Content/animate.css" rel="stylesheet" />
+    <!-------------- owl carousel css -------------->
+    <link href="../Content/owl.carousel.min.css" rel="stylesheet" />
+    <!-------------- magnific-popup -------------->
+    <link href="../Content/magnific-popup.css" rel="stylesheet" />
+    <!-------------- responsive css -------------->
+    <link href="../Content/responsive.css" rel="stylesheet" />
+</head>
+<body style="height: 100%; width: 100%">
+    <p style="height: 50%; width: 80%" class="static-page-text" style="vertical-align:central">
+
+        Solucion con for / if: <br />
+
+        <textarea style="height:50%;width:80%">
+            def sum_squares(n):
+                suma = 0
+                for i in range (n + 1):
+                    if i % 2 == 0:
+                        suma = suma + i**2
+                return suma
+
+            # Pruebas Usadas
+            print(sum_squares(1))
+            print(sum_squares(10))
+            print(sum_squares(100))
+            print(sum_squares(1000))
+        </textarea>
+        <br />
+
+        Solucion con apply / sum: 
+        <br />
+
+        <textarea style="height:50%;width:80%">
+            def sum_squares(n):
+                return sum(map(lambda x: x**2, range(2, n+1, 2)))
+
+            # Pruebas Usadas
+            print(sum_squares(1))
+            print(sum_squares(10))
+            print(sum_squares(100))
+            print(sum_squares(1000))
+        </textarea>
+    </p>
+</body>
+</html>

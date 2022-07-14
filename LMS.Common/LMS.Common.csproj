@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1DEFE8F2-3509-48D3-B550-33AEC84723AC}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LMS.Common</RootNamespace>
+    <AssemblyName>LMS.Common</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="HelperModels\Param.cs" />
+    <Compile Include="Infos\CompilerInfo.cs" />
+    <Compile Include="Infos\ExecutionResult.cs" />
+    <Compile Include="Infos\RunInfo.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SharedFunctions\SharedFunctions.cs" />
+    <Compile Include="ViewModels\VmCourseInstanceCodingProblem.cs" />
+    <Compile Include="ViewModels\VmGradeScaleGroup.cs" />
+    <Compile Include="ViewModels\VmGradingPolicy.cs" />
+    <Compile Include="ViewModels\VmCourseCorequisite.cs" />
+    <Compile Include="ViewModels\VmInstructorCourse.cs" />
+    <Compile Include="ViewModels\VmActivity.cs" />
+    <Compile Include="ViewModels\VmAnnouncement.cs" />
+    <Compile Include="ViewModels\VmCalendarData_Result.cs" />
+    <Compile Include="ViewModels\VmCodeError.cs" />
+    <Compile Include="ViewModels\VmCodingProblem.cs" />
+    <Compile Include="ViewModels\VmCodingProblemAllInfo.cs" />
+    <Compile Include="ViewModels\VmCodingProblemInstance.cs" />
+    <Compile Include="ViewModels\VmCourse.cs" />
+    <Compile Include="ViewModels\VmCourseInstance.cs" />
+    <Compile Include="ViewModels\VmDiscussionBoard.cs" />
+    <Compile Include="ViewModels\VmFeedback.cs" />
+    <Compile Include="ViewModels\VmGradeScale.cs" />
+    <Compile Include="ViewModels\VmGradeWeight.cs" />
+    <Compile Include="ViewModels\VmGroupDiscussion.cs" />
+    <Compile Include="ViewModels\VmLanguage.cs" />
+    <Compile Include="ViewModels\VmLoadAllDataInfo.cs" />
+    <Compile Include="ViewModels\VmMaterial.cs" />
+    <Compile Include="ViewModels\VmModule.cs" />
+    <Compile Include="ViewModels\VmQuarter.cs" />
+    <Compile Include="ViewModels\VmQuizQuestion.cs" />
+    <Compile Include="ViewModels\VmQuizQuestionElementStyle.cs" />
+    <Compile Include="ViewModels\VmQuizQuestionRating.cs" />
+    <Compile Include="ViewModels\VmRequestLogin.cs" />
+    <Compile Include="ViewModels\VmSanitizedCodeError.cs" />
+    <Compile Include="ViewModels\VmStudent.cs" />
+    <Compile Include="ViewModels\VmStudentGradeable.cs" />
+    <Compile Include="ViewModels\VmStudentQuizQuestion.cs" />
+    <Compile Include="ViewModels\VmStudentSupportTicketMessage.cs" />
+    <Compile Include="ViewModels\VmSubmission.cs" />
+    <Compile Include="ViewModels\VmSubmissionCodeError.cs" />
+    <Compile Include="ViewModels\VmSupportTicket.cs" />
+    <Compile Include="ViewModels\VmVariableValue.cs" />
+    <Compile Include="ViewModels\VmVideoMaterial.cs" />
+    <Compile Include="ViewModels\VmVideoMaterialStep.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

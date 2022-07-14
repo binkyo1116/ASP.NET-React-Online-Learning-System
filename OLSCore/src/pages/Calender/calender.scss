@@ -1,0 +1,322 @@
+@import url('react-calendar/dist/Calendar.css');
+// .react-calendar__tile--now::before {
+//     // content:"\A";
+
+//     // width:10px;
+//     // height:10px;
+//     // border-radius:50%;
+//     // display:inline-block;
+//     // background: #0092CE;
+// }
+.react-calendar__navigation__arrow {
+    display: none;
+}
+.react-calendar__tile--now {
+    background: none;
+    &:hover {
+        background: #0092CE;
+    }
+}
+
+.calender-container {
+    max-width: 100%;
+    height: 100%;
+    display: flex;
+}
+.calender__main {
+    background-color: #F5F5F5;
+    flex-grow: 1;
+    padding: 47px 0 0 37px;
+    width: 60%;
+}
+.calender__header {
+    display: flex;
+    justify-content: space-between;
+}
+.calaender__form-search {
+    background: rgba(0, 97, 137, 0.03);
+    height: 55px;
+    border-radius: 12px;
+    max-width: 310px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 12px;
+    padding-left: 21px;
+}
+.calender__form-input {
+    height: 23px;
+    border: 0;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    background-color: unset;
+    color: #9F9F9F;
+    margin-right: 10px;
+}
+.calender__form-input::placeholder {
+    color: #9F9F9F;
+}
+.calender__form-svg {
+    height: 17.5px;
+    max-width: 17.5px;
+}
+.calender__message-vector {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #A0A0A0;
+    border-radius: 12px;
+    margin-left: 12px;
+    width: 54px;
+}
+.header__icons {
+    display: flex;
+    justify-content: center;
+}
+
+.lightBlue {
+    background-color: #E2EAF5;
+}
+.lightGreen {
+    background-color: #D6EADE;
+}
+.main__event-calender {
+    margin-top: 45px;
+    max-height: 600px;
+}
+.calender__right-head {
+    background-color: #F5F5F5;
+    padding: 47px 0 0 40px;
+    min-width: 20%;
+    max-width: 30%;
+}
+
+.right--user {
+    display: flex;
+    width: 85%;
+    justify-content: space-between;
+}
+.user-name {
+    font-weight: 400;
+    font-size: 17.6px;
+    line-height: 26.4px;
+    color: #353535;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 3px;
+}
+.user--dropdown {
+    width: 18%;
+    height: 45px;
+    background: #F2F2F2;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.arrow-down {
+    max-width: 11.5px;
+    height: 5.5px;;
+}
+.dropdown {
+    width: 207px;
+    height: auto;
+    position: absolute;
+    right: 0px;
+    top: 55px;
+    background: #FBFBFB;
+    box-shadow: 0px 1px 20px rgba(0, 0, 0, 0.08);
+    border-radius: 12px;
+    height: 183px;
+}
+.col-user {
+    display: flex;
+    padding: 8px 0 8px 25px;
+    gap: 10px;
+}
+.hr__line {
+    width: 159px;
+    height: 0px;
+    border: 1px solid #D9D9D9;
+    margin: auto;
+}
+.log-out {
+    display: flex;
+    padding: 8px 0 8px 25px;
+    gap: 10px;
+    margin-top: 10px;
+    color: #EB5757;
+}
+.col-user:hover {
+    background: linear-gradient(270deg, rgba(0, 146, 206, 0.1) 0%, rgba(0, 146, 206, 0.02) 137.13%);
+}
+.display {
+    display: block;
+}
+.hidden {
+    display: none;
+}
+.rightSideBar-calender {
+    width: 85%;
+    margin-top: 40px;
+}
+.calender-right {
+    background-color: #F5F5F5;
+    border: 0;
+}
+.calender_right-cell {
+    background: unset;
+    border: 0;
+    padding: 5px;
+    background-color: #F5F5F5;
+
+
+}
+.email {
+    font-size: 11px;
+    font-weight: 400;
+}
+.user--avatar {
+    width: 30px;
+    margin-bottom: 3px;
+}
+.calender__right-user {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.instructor_name {
+    font-weight: 400;
+    font-size: 15px;
+    color: #353535;
+    margin: 0;
+}
+.instructor_role {
+    font-size: 13.47px;
+    color: 606060;
+}
+.instructor__detail {
+    border: 1px solid #D9D9D9;
+    border-radius: 12px;
+    width: 85%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 7px;
+    gap: 10px;
+    height: 74px;
+    margin-bottom: 16px;
+}
+.instructor__text {
+    margin-top: 10px;
+    flex-grow: 1;
+    padding-left: 10px;
+}
+.instructor__icon {
+    background: #F2F2F2;
+    border-radius: 7px;
+    max-width: 34px;
+    width: 30px;
+    min-width: 20px;
+    height: 34px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon__info {
+    width: 16px;
+}
+.icon__div {
+    display: flex;
+    margin-right: 10px;
+    gap: 10px;
+}
+.intructor__pic {
+    width: 25px;
+    max-width: 25px;
+}
+.instructor__heading {
+    max-width: 192px;
+    height: 36px;
+    font-size: 24px;
+    line-height: 36px;
+    color: #404040;
+    padding-top: 5px;
+    padding-left: 10px;
+}
+.appointment_tooltip {
+    margin-left: 35px;
+    margin-bottom: 35px;
+
+}
+.appoitment__tooltip-field {
+    display: flex;
+    gap: 5px;
+}
+.appoitment__tooltip-fieldValue {
+    margin-top: -10px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+.appoitment__tooltip-cell {
+    width: 50%;
+}
+.leave__btn {
+    width: 167px;
+    padding: 20px;
+    background-color:#0092CE;;
+}
+.appointment__container {
+    // width: 'fit-content';
+    display: grid;
+    grid-template-rows: 10% 60% 10% 10%;
+    gap: 10px;
+}
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.appointment__sample {
+    padding: 10px 0px 10px 10px
+}
+.timeScale {
+    font-size : 16;
+    width: 115;
+    font-family : 'Poppins';
+    height: 84;
+    display: 'flex';
+    // justifyContent: 'center';
+    align-items : 'center';
+    border-bottom: '1px solid #D9D9D9';
+    position: 'relative';
+    top: 42;
+    right: -10;
+}
+.timeScaleLayout:last-child {
+    display: none;
+    color: red;
+}
+.timeScaleCell {
+    font-size : 16;
+    width: 116;
+    font-family : 'Poppins';
+    height: 84;
+    top: 0.5;
+    display: 'flex';
+    font-weight: 500;
+    align-items : 'center';
+    border-bottom: '1px solid #D9D9D9';
+    position: 'relative';
+    right : -10;
+}
+.appointment__credit {
+    padding-left: 10px;
+}
+.tooltip__header:first-child {
+    margin-top: 35px;
+    margin-right: 35px;
+}

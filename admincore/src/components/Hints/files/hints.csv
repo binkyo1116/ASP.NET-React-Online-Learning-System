@@ -1,0 +1,11 @@
+Syntax;Name;Example;Description
+{A};Parametrizable variable;screenshot1.jpg;The variable may have different values and they will be chosen when a student tries to solve a coding problem.
+first..last:step;Ranges;screenshot2.jpg;first..last:step where first and last represent the first and last possible value in the range respectively, and step is the distance between each element and the next.
+Value1,Value2;Constants;screenshot1.jpg;',' is used to separate the different value options.
+[elem1,elem2..], ..,[elemn1,elemn2..];Lists;screenshot3.jpg;The variable represents element's lists. For each student, one of the lists from above will be chosen.
+${A,1} ${A,2} ${A,3} ${A,4};Multiple instance variables;screenshot4.jpg; Each time a variable is chosen it will be deleted from the possible choices, so it won't be chosen again.
+A,B,C firstvalue,..,lastvalue;Multivariables;screenshot5.jpg;They allow defining different instances of the same variable, where each one has its value in the same range.
+{{A}};Variables without memory;screenshot6.jpg;They allow defining a new variable type without memory, whose value will change each time a student opens a problem that contains this variable.
+A = [x1,x2],[y1,y2];Tuples;screenshot7.jpg;The variable represents tuples that will be chosen between students.
+$S{};Hit message;screenshot9.jpg;$S{} is used to define the content of a hit message.
+$E{};Miss message;screenshot8.jpg;$E{} is used to define the content of a miss message.

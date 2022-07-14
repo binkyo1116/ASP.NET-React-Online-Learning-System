@@ -1,0 +1,15 @@
+#instructions {
+    width: 550px !important;
+    height: 300px !important;
+    border:1px solid black;
+}
+
+.variable_marker_red {
+    position: absolute;
+    background-color: #ff9688 !important;
+}
+
+.variable_marker_green {
+    position: absolute;
+    background-color: #a5eea0 !important;
+}

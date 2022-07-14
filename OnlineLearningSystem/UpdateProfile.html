@@ -1,0 +1,129 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="keywords" content="Data,learning">
+
+    <!-- Title & favicon -->
+    <title>Let's Use Data</title>
+    <link rel="favicon icon" href="favicon.png" type="image/png" />
+
+    <!-- Styles -->
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/fontawesome-free-6.1.1-web/css/all.min.css" rel="stylesheet" />
+    <link href="Content/style.css" rel="stylesheet" />
+    <link href="Content/custome-style.css" rel="stylesheet" />
+    <link href="Content/new-theme-style.css" rel="stylesheet" />
+    <link href="Content/styles/general.css" rel="stylesheet" />
+    <link href="Content/styles/update-profile.css" rel="stylesheet" />
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-196054626-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-196054626-1');
+    </script>
+</head>
+<body>
+    <!--========================================Top Navbar=================================-->
+    <!-------------- Jquery -------------->
+    <script src="Scripts/jquery-3.5.1.min.js"></script>
+    <!-------------- bootstrap js -------------->
+    <script src="Scripts/bootstrap.min.js"></script>
+    <!-------------- Global js -------------->
+    <script type="text/javascript" src="PageScripts/Global.js"></script>
+    <!----------------------- start loader section ----------------------->
+    <div id="loader-spinner" class="loader-img loader-bg" style="display:block">
+        <img src="Content/images/Loder_Trancparent_bg.gif" />
+    </div>
+    <!----------------------- end loader section ----------------------->
+    <div id="includedContent"></div>
+    <!--====================================================================================-->
+    <!--========================================Content area=================================-->
+    <section class="page-content">
+        <div class="w-100 mb-0 mt-0 mb-md-3 mt-md-3 mb-lg-5 mt-lg-5" style="height:1px;"></div>
+
+        <div class="container d-flex flex-column flex-lg-row justify-content-lg-center mb-5">
+            <!-- Update Profile -->
+            <div class="box updateprofile mt-5 d-flex flex-column align-items-start col-12 col-lg-4 col-xl-5">
+                <div class="boxtitle-updateprofile">Update Profile</div>
+                <div class="align-self-center mx-auto mb-4" style="position:relative;">
+                    <img id="ProfileImageView" class="profile-image" />
+                    <label for="fileUploadImage" class="profile-changephotobtn"><i class="fa-solid fa-camera"></i></label>
+                    <input type="file" id="fileUploadImage" class="d-none" accept=".png,.jpg" />
+                </div>
+                <div class="mb-3 msg" id="msg-imageupdate" style="display: none;"></div>
+                <div class="form-group col-12 mb-3">
+                    <label for="fullName" class="label mb-1">Your Full Name</label>
+                    <div class="input-textbox-container">
+                        <input type="text" class="textbox" id="fullName" autocomplete="name" disabled />
+                    </div>
+                </div>
+                <div class="form-group col-12">
+                    <label for="eMail" class="label mb-1">Your Email</label>
+                    <div class="input-textbox-container">
+                        <input type="email" class="textbox" id="eMail" autocomplete="email" disabled />
+                    </div>
+                </div>
+            </div>
+
+            <!-- Vertical separator -->
+            <div class="d-none d-lg-block" style="width:3rem;height:100%;"></div>
+
+            <!-- Update Password -->
+            <div class="box updateprofile mt-5 d-flex flex-column align-items-start col-12 col-lg-4 col-xl-5">
+                <div class="boxtitle-updateprofile">Update Password</div>
+                <div class="form-group col-12 mb-2">
+                    <label for="passwordCurrent" class="label mb-1">Current Password</label>
+                    <div class="input-textbox-container">
+                        <input type="password" class="textbox" id="passwordCurrent" />
+                        <div class="pw-vis hidden"></div>
+                    </div>
+                    <div><i class="fa-solid fa-circle-exclamation"></i>&nbsp;<span></span></div>
+                </div>
+                <div class="form-group col-12 mb-2">
+                    <label for="passwordNew" class="label mb-1">New Password</label>
+                    <div class="input-textbox-container">
+                        <input type="password" class="textbox" id="passwordNew" />
+                        <div class="pw-vis hidden"></div>
+                    </div>
+                    <div><i class="fa-solid fa-circle-exclamation"></i>&nbsp;<span></span></div>
+                </div>
+                <div class="form-group col-12 mb-2">
+                    <label for="passwordConfirm" class="label mb-1">Confirm Password</label>
+                    <div class="input-textbox-container">
+                        <input type="password" class="textbox" id="passwordConfirm" />
+                        <div class="pw-vis hidden"></div>
+                    </div>
+                    <div><i class="fa-solid fa-circle-exclamation"></i>&nbsp;<span></span></div>
+                </div>
+                <div class="msg" id="msg-pwupdate" style="display: none;">
+                    <div class="msg-text"></div><div class="msg-close">&times;</div>
+                </div>
+                <div style="width:100%;height:1.6rem;"></div>
+                <button type="button" class="button solid w-100" id="profile-changepassword">Change Password</button>
+            </div>
+        </div>
+    </section>
+    <!--===================================================================================-->
+    <!--========================================footer area=================================-->
+    <!--<section class="footer-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="footer-content">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>-->
+    <!--=============================================================================-->
+    <script type="text/javascript" src="PageScripts/UserInterface.js"></script>
+    <script type="text/javascript" src="PageScripts/UpdateProfile.js"></script>
+</body>
+</html>
