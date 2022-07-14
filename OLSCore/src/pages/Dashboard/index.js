@@ -23,17 +23,17 @@ export default class index extends Component {
     super(props)
     this.state = initialState;
     // this.imageRef = createRef();
-}
-popoverClickRootClose =() => {
-  return (<Popover id="popover-trigger-click-root-close" >
-     <ListGroup>
-    <ListGroupItem href="#link1"title="Edit Profile">Edit Profile</ListGroupItem>
-    <ListGroupItem title="Log Out" onClick={()=>{window.localStorage.clear();
-    	this.props.history.go('/');
-    }} >Log Out</ListGroupItem>
-  </ListGroup>
-  </Popover>);
-}
+  }
+  popoverClickRootClose =() => {
+    return (<Popover id="popover-trigger-click-root-close" >
+      <ListGroup>
+      <ListGroupItem href="#link1"title="Edit Profile">Edit Profile</ListGroupItem>
+      <ListGroupItem title="Log Out" onClick={()=>{window.localStorage.clear();
+        this.props.history.go('/');
+      }} >Log Out</ListGroupItem>
+    </ListGroup>
+    </Popover>);
+  }
   render() {
     return (
       <>
