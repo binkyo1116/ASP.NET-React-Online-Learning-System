@@ -148,7 +148,6 @@ export default class index extends Component {
               </select>
             </div>
             <div className='graph-card-body'>
-              <Chart />
             </div>
           </div>
         </div>
