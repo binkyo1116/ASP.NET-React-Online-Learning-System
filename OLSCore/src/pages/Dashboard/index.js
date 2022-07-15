@@ -13,11 +13,53 @@ import user2 from '../../assets/images/user-2.png'
 import user3 from '../../assets/images/user-3.png'
 import user4 from '../../assets/images/user-4.png'
 import { ProgressBar, Popover, OverlayTrigger,ListGroup,ListGroupItem } from 'react-bootstrap'
+import { VictoryBar, VictoryChart, VictoryAxis, TextSize, Bar, VictoryLabel, VictoryTheme } from 'victory';
+
+const data = [
+  {quarter: 1, earnings: 100},
+  {quarter: 2, earnings: 100},
+  {quarter: 3, earnings: 82},
+  {quarter: 4, earnings: 87},
+  {quarter: 5, earnings: 87},
+  {quarter: 6, earnings: 87},
+  {quarter: 7, earnings: 87},
+  {quarter: 8, earnings: 87},
+  {quarter: 9, earnings: 87},
+  {quarter: 10, earnings: 87},
+];
 
 const initialState = {
+  data: {
+    labels: [
+      "January",
+      "February",
+      "March",
+      "April",
+      "May",
+      "June",
+      "July"
+    ],
+    datasets: [
+      {
+        label: "My First dataset",
+        backgroundColor: "#0069b4b3",
+        borderColor: "#0069b4",
+        borderWidth: 1,
+        hoverBackgroundColor: "#0069b447",
+        hoverBorderColor: "#0069b4",
+        data: [65, 59, 100, 81, 56, 55, 40]
+      }
+    ]
+  },
+};
+let quaters = [];
+let tickValues = [];
 
-  
+for (let i = 1; i < 11; i ++) {
+  quaters.push("Week" + i);
+  tickValues.push(i);
 }
+
 export default class index extends Component {
   constructor(props) {
     super(props)
@@ -148,6 +190,43 @@ export default class index extends Component {
               </select>
             </div>
             <div className='graph-card-body'>
+            <VictoryChart
+              // domainPadding will add space to each side of VictoryBar to
+              // prevent it from overlapping the axis
+              domainPadding={10}
+              height={221}
+              width={550}
+              theme={VictoryTheme.material}
+            >
+              {/* <VictoryAxis dependentAxis
+                domain={[-10, 15]}
+                offsetX={50}
+                orientation="left"
+                standalone={false}
+                
+              /> */}
+              <VictoryAxis
+                // tickValues specifies both the number of ticks and where
+                // they are placed on the axis
+                tickValues={tickValues}
+                tickFormat={quaters}
+                style={{ }}
+              />
+              <VictoryAxis
+                dependentAxis
+                // tickFormat specifies how ticks should be displayed
+                tickValues={[0, 25, 50, 75, 100]}
+                tickFormat={(x) => x}
+              />
+              <VictoryBar
+                style={{ data: { fill: "#AADBEF" } }}
+                cornerRadius={{ top: 4, bottom: 4 }}
+                data={data}
+                width={33}
+                x="quarter"
+                y="earnings"
+              />
+            </VictoryChart>
             </div>
           </div>
         </div>
