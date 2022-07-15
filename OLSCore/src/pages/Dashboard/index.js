@@ -13,7 +13,6 @@ import user2 from '../../assets/images/user-2.png'
 import user3 from '../../assets/images/user-3.png'
 import user4 from '../../assets/images/user-4.png'
 import { ProgressBar, Popover, OverlayTrigger,ListGroup,ListGroupItem } from 'react-bootstrap'
-import Chart from './Chart'
 
 const initialState = {
 
