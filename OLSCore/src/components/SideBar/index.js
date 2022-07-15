@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './sidebar.scss'
 import mainLogo from '../../assets/images/logo.svg'
 import listIcon1 from '../../assets/icons/dashboard.svg'
@@ -9,6 +9,14 @@ import contactInfo from '../../assets/icons/chat-info.svg'
 
 
 function SideBar({activeDashboard, activeCalender, activeMessage, activeHelp}) {
+
+    const [sideBarItems, setSideBarItems] = useState([
+        { name: 'Dashboard', active: activeDashboard},
+        { name: 'Calendar', active: activeCalender},
+        { name: 'Message', active: activeMessage},
+        { name: 'Help Center', active: activeHelp},
+    ]);
+
     return (
         <div className='col-2 sidebar-container'>
             <div className='sidebar-logo-container'>
@@ -18,10 +26,11 @@ function SideBar({activeDashboard, activeCalender, activeMessage, activeHelp}) {
                 <div>
                     <label className='sidebar-menu-label'>Personal</label>
                     <ul className='sidebar-list-container'>
-                        <li className={(activeDashboard ? 'active' : '')}><div className='list-icon'><img style={{fill : 'blue'}} src={listIcon1} alt="" /></div> Dashboard</li>
-                        <li className={(activeCalender ? 'active' : '')}><div className='list-icon'><img src={listIcon2} alt="" /></div> Calender</li>
-                        <li className={(activeMessage ? 'active' : '')}><div className='list-icon'><img src={listIcon3} alt="" /></div> Message</li>
-                        <li className={(activeHelp ? 'active' : '')}><div className='list-icon'><img src={listIcon4} alt="" /></div> Help Center</li>
+                        {
+                            sideBarItems.map(item => (
+                                <li className={(item.active ? 'active' : '')}><div className='list-icon'><img style={item.active ? {fill : 'blue'} : {}} src={listIcon1} alt="" /></div> {item.name}</li>        
+                            ))
+                        }
                     </ul>
                 </div>
             </div>
