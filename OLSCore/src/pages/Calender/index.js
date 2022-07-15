@@ -6,7 +6,7 @@ import CalenderRight from './CalenderRight';
 function Calender() {
   return (
     <div className='calender-container'>
-        <SideBar activeCalender/>
+        <SideBar activeCalender={'active'}/>
         <CalenderMain />
         <CalenderRight />
     </div>
