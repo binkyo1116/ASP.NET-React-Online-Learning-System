@@ -13,6 +13,7 @@ import user2 from '../../assets/images/user-2.png'
 import user3 from '../../assets/images/user-3.png'
 import user4 from '../../assets/images/user-4.png'
 import { ProgressBar, Popover, OverlayTrigger,ListGroup,ListGroupItem } from 'react-bootstrap'
+import Chart from './Chart'
 
 const initialState = {
 
@@ -75,7 +76,8 @@ export default class index extends Component {
                       </video>
                     </div>
                     <div className='d-flex align-items-center justify-content-between'>
-                      <div className='user-list'>
+                      <label className='grade'>Grade A:</label>
+                      {/* <div className='user-list'>
                         <img className='user-img-1' src={user1} alt='' />
                         <img className='user-img-2' src={user2} alt='' />
                         <img className='user-img-3' src={user3} alt='' />
@@ -83,18 +85,18 @@ export default class index extends Component {
                         <div className='user-count'>
                           <label>16+</label>
                         </div>
-                      </div>
+                      </div> */}
                       <button className='btn-fill w-100px'>Enter Class</button>
                     </div>
                   </div>
                 </div>
                 <hr />
                 <div className='d-flex align-items-center justify-content-center card-footer-part'>
-                  <label>0%</label>
+                  {/* <label>0%</label> */}
                   <div className='w-75 custom-progress-bar'>
-                    <ProgressBar now={60} />
+                    <ProgressBar className='progress-bar' now={62} />
                   </div>
-                  <label>C</label>
+                  <label>62%</label>
                 </div>
               </div>
             </div>
@@ -109,7 +111,8 @@ export default class index extends Component {
                       </video>
                     </div>
                     <div className='d-flex align-items-center justify-content-between'>
-                      <div className='user-list'>
+                      <label className='grade'>Grade A:</label>
+                      {/* <div className='user-list'>
                         <img className='user-img-1' src={user1} alt='' />
                         <img className='user-img-2' src={user2} alt='' />
                         <img className='user-img-3' src={user3} alt='' />
@@ -117,18 +120,18 @@ export default class index extends Component {
                         <div className='user-count'>
                           <label>16+</label>
                         </div>
-                      </div>
+                      </div> */}
                       <button className='btn-fill w-100px'>Enter Class</button>
                     </div>
                   </div>
                 </div>
                 <hr />
                 <div className='d-flex align-items-center justify-content-center card-footer-part'>
-                  <label>0%</label>
+                  {/* <label>0%</label> */}
                   <div className='w-75 custom-progress-bar'>
-                    <ProgressBar now={10} />
+                    <ProgressBar className='progress-bar' now={50} />
                   </div>
-                  <label>C</label>
+                  <label>50%</label>
                 </div>
               </div>
             </div>
@@ -146,7 +149,7 @@ export default class index extends Component {
               </select>
             </div>
             <div className='graph-card-body'>
-
+              <Chart />
             </div>
           </div>
         </div>

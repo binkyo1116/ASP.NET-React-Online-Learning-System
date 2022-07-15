@@ -6,8 +6,8 @@
 .btn-fill{
     background-color: #0092CE;
     border-radius: 5px;
-    height: 40px;
-    width: 100%;
+    width: 125px;
+    height: 36px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -267,9 +267,10 @@
         }
         .btn-glassMorphism{
             border: 2px solid #0092CE;
-            border-radius: 9px;
-            height: 70px;
-            width: 40px;
+            background-color: rgba(0, 146, 206, 0.15);
+            border-radius: 12px;
+            height: 75px;
+            width: 55px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -279,12 +280,12 @@
             text-transform: uppercase;
             font-size: 12px;
             font-weight: 400;
-            background-color: #E7F4FA;
             position: absolute;
-            right: -11px;
+            right: 9px;
             top: 50%;
             transform: translate(0px, -50%);
             z-index: 1051;
+            backdrop-filter: blur(10px);
         }
         .user-list{
             position: relative;
@@ -523,19 +524,21 @@
             align-items: center;
             justify-content: flex-start;
             margin-bottom: 10px;
+            padding: 10px;
             .first-container{
                 width: 100px;
                 label{
                     color: #808080;
                     font-size: 15px;
-                    font-weight: 400;
+                    font-weight: 500;
                     display: block;
                     margin-bottom: 1px;
                 }
                 span{
                     color: #404040;
-                    font-size: 15px;
-                    font-weight: 400;
+                    font-size: 14px;
+                    font-family: 'Poppins';
+                    font-weight: 500;
                 }
             }
             .middle-container{
@@ -564,17 +567,48 @@
             .last-container{
                 label{
                     color: #808080;
-                    font-size: 15px;
-                    font-weight: 400;
+                    font-size: 11px;
+                    font-weight: 500;
                     display: block;
                     margin-bottom: 1px;
                 }
                 span{
                     color: #2B2B2B;
-                    font-size: 15px;
-                    font-weight: 400;
+                    font-size: 14px;
+                    font-weight: 500;
                 }
             }
         }
     }
+}
+.progress-bar {
+    background-color: #0092CE;
+}
+
+select {
+    padding: 8px 16px;
+    box-sizing: border-box;
+    border: 1px solid #BFBFBF;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-radius: 8px;
+    gap: 10px;
+    appearance: none;
+    -moz-appearance:none; /* Firefox */
+    -webkit-appearance:none; /* Safari and Chrome */
+    background-image: url("../../assets/images/Vector.png");
+    background-repeat: no-repeat;
+    background-position-x: 80%;
+    background-position-y: 50%;
+}
+
+label.grade {
+    font-size: 12px;
+    font-weight: 500;
+    font-family: 'Poppins';
+    font-style: normal;
+    color: #404040;
+    text-align: center;
 }
