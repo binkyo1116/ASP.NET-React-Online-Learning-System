@@ -16,6 +16,7 @@
     "@testing-library/user-event": "^13.5.0",
     "axios": "^0.27.2",
     "bootstrap": "^5.1.3",
+    "cdbreact": "^1.5.2",
     "moment": "^2.29.4",
     "node-sass": "^7.0.1",
     "react": "^18.2.0",
