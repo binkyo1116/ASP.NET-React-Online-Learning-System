@@ -11,10 +11,10 @@ import contactInfo from '../../assets/icons/chat-info.svg'
 function SideBar({activeDashboard, activeCalender, activeMessage, activeHelp}) {
 
     const [sideBarItems, setSideBarItems] = useState([
-        { name: 'Dashboard', active: activeDashboard},
-        { name: 'Calendar', active: activeCalender},
-        { name: 'Message', active: activeMessage},
-        { name: 'Help Center', active: activeHelp},
+        { name: 'Dashboard', active: activeDashboard, icon: listIcon1 },
+        { name: 'Calendar', active: activeCalender, icon: listIcon2 },
+        { name: 'Message', active: activeMessage, icon: listIcon3 },
+        { name: 'Help Center', active: activeHelp, icon: listIcon4 },
     ]);
 
     return (
@@ -28,7 +28,7 @@ function SideBar({activeDashboard, activeCalender, activeMessage, activeHelp}) {
                     <ul className='sidebar-list-container'>
                         {
                             sideBarItems.map(item => (
-                                <li className={(item.active ? 'active' : '')}><div className='list-icon'><img style={item.active ? {fill : 'blue'} : {}} src={listIcon1} alt="" /></div> {item.name}</li>        
+                                <li className={(item.active ? 'active' : '')}><div className='list-icon'><img style={{fill : 'blue'}} src={item.icon} alt="" /></div><a>{item.name}</a></li>        
                             ))
                         }
                     </ul>
